@@ -433,7 +433,7 @@ exceedance_dfs = [calculate_exceedance(aggregate_impacts, itype)
 exceedance_data = pd.concat(exceedance_dfs, ignore_index=True)
 
 # Create the plot
-fig2, ax = plt.subplots(figsize=(16, 11.4))
+fig2, ax = plt.subplots(figsize=(8, 6))
 
 for hazard_type in ['Earthquake', 'BuildingLandslide', 'RoadLandslide']:
     hazard_data = exceedance_data[exceedance_data['HazardType'] == hazard_type]
