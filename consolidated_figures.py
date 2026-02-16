@@ -36,19 +36,35 @@ try:
     plt.style.use(['science', 'no-latex', 'vibrant'])
     print("Using SciencePlots style")
 except:
-    # Custom scientific style settings if SciencePlots not installed
-    plt.rcParams['axes.linewidth'] = 1.0
-    plt.rcParams['axes.labelsize'] = 14
-    plt.rcParams['axes.titlesize'] = 14
-    plt.rcParams['xtick.labelsize'] = 12
-    plt.rcParams['ytick.labelsize'] = 12
-    plt.rcParams['legend.fontsize'] = 11
-    plt.rcParams['legend.title_fontsize'] = 11
-    plt.rcParams['grid.linewidth'] = 0.5
-    plt.rcParams['lines.linewidth'] = 1.5
-    plt.rcParams['lines.markersize'] = 5
-    plt.rcParams['figure.dpi'] = 300
-    print("Using custom scientific style")
+    print("SciencePlots not available, using custom style")
+
+# Unified font and style settings applied AFTER style.use() to ensure consistency
+# across ALL figures regardless of whether SciencePlots loaded
+plt.rcParams.update({
+    # Font family - Arial/Helvetica is standard for scientific figures
+    'font.family': 'sans-serif',
+    'font.sans-serif': ['Arial', 'Helvetica', 'DejaVu Sans'],
+    'font.size': 12,
+    # Axes
+    'axes.linewidth': 1.0,
+    'axes.labelsize': 14,
+    'axes.titlesize': 14,
+    # Ticks
+    'xtick.labelsize': 12,
+    'ytick.labelsize': 12,
+    # Legend
+    'legend.fontsize': 11,
+    'legend.title_fontsize': 11,
+    # Lines and grid
+    'grid.linewidth': 0.5,
+    'lines.linewidth': 1.5,
+    'lines.markersize': 5,
+    # Figure
+    'figure.dpi': 300,
+    # Math text uses the same font as body text
+    'mathtext.default': 'regular',
+})
+print("Unified font settings applied")
 
 # %% Set paths
 # Set working directory and output paths
@@ -1165,7 +1181,7 @@ ax_a.tick_params(axis='both', labelsize=12)
 ax_a.set_aspect('equal', adjustable='box')
 
 # Add panel label
-ax_a.text(-0.08, 1.05, 'A', transform=ax_a.transAxes, fontsize=22, fontweight='bold', va='top')
+ax_a.text(-0.08, 1.05, 'A', transform=ax_a.transAxes, fontsize=20, fontweight='bold', va='top')
 
 # =============================================================================
 # PANEL B (Upper Right): Correlation of remoteness indices (scatter plot)
@@ -1184,7 +1200,7 @@ ax_b.set_xlim(0, 1)
 ax_b.set_ylim(0, 1)
 
 # Add panel label
-ax_b.text(-0.08, 1.05, 'B', transform=ax_b.transAxes, fontsize=22, fontweight='bold', va='top')
+ax_b.text(-0.08, 1.05, 'B', transform=ax_b.transAxes, fontsize=20, fontweight='bold', va='top')
 
 # =============================================================================
 # PANEL C (Lower Left): % roads affected by landslide vs remoteness categories
@@ -1215,7 +1231,7 @@ else:
              ha='center', va='center', transform=ax_c.transAxes, fontsize=14)
 
 # Add panel label
-ax_c.text(-0.08, 1.05, 'C', transform=ax_c.transAxes, fontsize=22, fontweight='bold', va='top')
+ax_c.text(-0.08, 1.05, 'C', transform=ax_c.transAxes, fontsize=20, fontweight='bold', va='top')
 
 # =============================================================================
 # PANEL D (Lower Right): Current worst case vs remoteness categories
@@ -1244,7 +1260,7 @@ else:
              ha='center', va='center', transform=ax_d.transAxes, fontsize=14)
 
 # Add panel label
-ax_d.text(-0.08, 1.05, 'D', transform=ax_d.transAxes, fontsize=22, fontweight='bold', va='top')
+ax_d.text(-0.08, 1.05, 'D', transform=ax_d.transAxes, fontsize=20, fontweight='bold', va='top')
 
 # =============================================================================
 # Save figure
@@ -1437,7 +1453,7 @@ ax_a.tick_params(axis='both', labelsize=12)
 ax_a.set_aspect('equal', adjustable='box')
 
 # Add panel label
-ax_a.text(-0.08, 1.05, 'A', transform=ax_a.transAxes, fontsize=22, fontweight='bold', va='top')
+ax_a.text(-0.08, 1.05, 'A', transform=ax_a.transAxes, fontsize=20, fontweight='bold', va='top')
 
 # =============================================================================
 # PANEL B (Right): Normalized Risk Score
@@ -1482,7 +1498,7 @@ ax_b.tick_params(axis='both', labelsize=12)
 ax_b.set_aspect('equal', adjustable='box')
 
 # Add panel label
-ax_b.text(-0.08, 1.05, 'B', transform=ax_b.transAxes, fontsize=22, fontweight='bold', va='top')
+ax_b.text(-0.08, 1.05, 'B', transform=ax_b.transAxes, fontsize=20, fontweight='bold', va='top')
 
 # =============================================================================
 # Save figure
@@ -1956,7 +1972,7 @@ norm_a = colors.Normalize(vmin=vmin_a, vmax=vmax_a)
 sm_a = plt.cm.ScalarMappable(cmap='rainbow', norm=norm_a)
 sm_a.set_array([])
 cbar_a = plt.colorbar(sm_a, cax=cax_a)
-cbar_a.set_label('Our Relative Risk Score', fontsize=12, fontweight='bold')
+cbar_a.set_label('Our Relative Risk Score', fontsize=14, fontweight='bold')
 
 ax_a.xaxis.set_major_formatter(ticker.FuncFormatter(format_lon))
 ax_a.yaxis.set_major_formatter(ticker.FuncFormatter(format_lat))
@@ -1997,7 +2013,7 @@ norm_b = colors.Normalize(vmin=vmin_b, vmax=vmax_b)
 sm_b = plt.cm.ScalarMappable(cmap='rainbow', norm=norm_b)
 sm_b.set_array([])
 cbar_b = plt.colorbar(sm_b, cax=cax_b)
-cbar_b.set_label('Robinson et al. (2018) Risk Score', fontsize=12, fontweight='bold')
+cbar_b.set_label('Robinson et al. (2018) Risk Score', fontsize=14, fontweight='bold')
 
 ax_b.xaxis.set_major_formatter(ticker.FuncFormatter(format_lon))
 ax_b.yaxis.set_major_formatter(ticker.FuncFormatter(format_lat))
@@ -2020,11 +2036,11 @@ ax_c.scatter(plot_data['Robinson_Risk_Score'], plot_data['RiskScore_Normalized']
 from scipy.stats import pearsonr
 corr, _ = pearsonr(plot_data['Robinson_Risk_Score'], plot_data['RiskScore_Normalized'])
 ax_c.text(0.05, 0.95, f'r = {corr:.3f}', transform=ax_c.transAxes,
-         fontsize=12, verticalalignment='top',
+         fontsize=14, verticalalignment='top',
          bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
 
-ax_c.set_xlabel('Robinson Risk Score', fontsize=12, fontweight='bold')
-ax_c.set_ylabel('Relative Risk Score', fontsize=12, fontweight='bold')
+ax_c.set_xlabel('Robinson Risk Score', fontsize=14, fontweight='bold')
+ax_c.set_ylabel('Relative Risk Score', fontsize=14, fontweight='bold')
 ax_c.set_title('C)', fontsize=14, fontweight='bold', loc='left')
 ax_c.grid(True, alpha=0.3, linestyle='--')
 ax_c.set_xlim(0.4, 1.05)
@@ -2052,7 +2068,7 @@ ax_d.barh(y + height/2, top_rob['Robinson_Risk_Score'] / top_rob['Robinson_Risk_
 
 ax_d.set_yticks(y)
 ax_d.set_yticklabels(top_rob['DISTRICT'], fontsize=8)
-ax_d.set_xlabel('Risk Score', fontsize=12, fontweight='bold')
+ax_d.set_xlabel('Risk Score', fontsize=14, fontweight='bold')
 ax_d.set_title('D)', fontsize=14, fontweight='bold', loc='left')
 ax_d.legend(loc='lower right', fontsize=14)
 ax_d.grid(axis='x', alpha=0.3, linestyle='--')
