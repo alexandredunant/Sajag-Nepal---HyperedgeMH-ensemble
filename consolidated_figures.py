@@ -906,44 +906,41 @@ cmap = 'rainbow'
 # ROW 1: Earthquake (shaking)
 create_map(nepal_admin_impacts, 'Earthquake_worst', axes5[0, 0],
           '', cmap, 'log', 'Worst-case impact\n(number of buildings)', vmin=vmin_abs, vmax=vmax_abs)
-axes5[0, 0].text(-0.12, 1.05, 'A', transform=axes5[0, 0].transAxes,
+axes5[0, 0].text(-0.05, 1.05, 'A', transform=axes5[0, 0].transAxes,
                  fontsize=20, fontweight='bold', va='top')
-axes5[0, 0].text(-0.25, 0.5, 'Earthquake\n(Shaking)', transform=axes5[0, 0].transAxes,
-                 fontsize=14, fontweight='bold', va='center', rotation=90)
+axes5[0, 0].set_ylabel('Earthquake\n(Shaking)', fontsize=14, fontweight='bold', labelpad=10)
 
 create_map(nepal_admin_impacts, 'PropEarthquake_worst', axes5[0, 1],
           '', cmap, 'identity', 'Worst-case impact\n(% of buildings)', vmin=vmin_prop, vmax=vmax_prop)
-axes5[0, 1].text(-0.12, 1.05, 'B', transform=axes5[0, 1].transAxes,
+axes5[0, 1].text(-0.05, 1.05, 'B', transform=axes5[0, 1].transAxes,
                  fontsize=20, fontweight='bold', va='top')
 
 # ROW 2: Building Landslide
 create_map(nepal_admin_impacts, 'BuildingLandslide_worst', axes5[1, 0],
           '', cmap, 'log', 'Worst-case impact\n(number of buildings)', vmin=vmin_abs, vmax=vmax_abs)
-axes5[1, 0].text(-0.12, 1.05, 'C', transform=axes5[1, 0].transAxes,
+axes5[1, 0].text(-0.05, 1.05, 'C', transform=axes5[1, 0].transAxes,
                  fontsize=20, fontweight='bold', va='top')
-axes5[1, 0].text(-0.25, 0.5, 'Building\nLandslide', transform=axes5[1, 0].transAxes,
-                 fontsize=14, fontweight='bold', va='center', rotation=90)
+axes5[1, 0].set_ylabel('Building\nLandslide', fontsize=14, fontweight='bold', labelpad=10)
 
 create_map(nepal_admin_impacts, 'PropBuildingLandslide_worst', axes5[1, 1],
           '', cmap, 'identity', 'Worst-case impact\n(% of buildings)', vmin=vmin_prop, vmax=vmax_prop)
-axes5[1, 1].text(-0.12, 1.05, 'D', transform=axes5[1, 1].transAxes,
+axes5[1, 1].text(-0.05, 1.05, 'D', transform=axes5[1, 1].transAxes,
                  fontsize=20, fontweight='bold', va='top')
 
 # ROW 3: Road Landslide
 create_map(nepal_admin_impacts, 'RoadLandslide_worst', axes5[2, 0],
           '', cmap, 'log', 'Worst-case impact\n(number of road segments)', vmin=vmin_abs, vmax=vmax_abs)
-axes5[2, 0].text(-0.12, 1.05, 'E', transform=axes5[2, 0].transAxes,
+axes5[2, 0].text(-0.05, 1.05, 'E', transform=axes5[2, 0].transAxes,
                  fontsize=20, fontweight='bold', va='top')
-axes5[2, 0].text(-0.25, 0.5, 'Road\nLandslide', transform=axes5[2, 0].transAxes,
-                 fontsize=14, fontweight='bold', va='center', rotation=90)
+axes5[2, 0].set_ylabel('Road\nLandslide', fontsize=14, fontweight='bold', labelpad=10)
 
 create_map(nepal_admin_impacts, 'PropRoadLandslide_worst', axes5[2, 1],
           '', cmap, 'identity', 'Worst-case impact\n(% of road segments)', vmin=vmin_prop, vmax=vmax_prop)
-axes5[2, 1].text(-0.12, 1.05, 'F', transform=axes5[2, 1].transAxes,
+axes5[2, 1].text(-0.05, 1.05, 'F', transform=axes5[2, 1].transAxes,
                  fontsize=20, fontweight='bold', va='top')
 
 fig5.tight_layout(h_pad=2.0, w_pad=1.5)
-fig5.subplots_adjust(left=0.08)
+fig5.subplots_adjust(left=0.12)
 fig5.savefig(os.path.join(output_dir, "Fig5_worst_case_absolute_proportional.png"), dpi=300, bbox_inches='tight')
 # fig5.savefig(os.path.join(output_dir, "Fig5_worst_case_absolute_proportional.pdf"), bbox_inches='tight')
 print("Figure 5 saved (worst-case absolute and proportional)")
@@ -973,29 +970,26 @@ cmap_std = 'rainbow'
 # ROW 1: Earthquake Standard Deviation
 create_map(nepal_admin_impacts_std, 'Earthquake_std', axes6[0],
           '', cmap_std, 'log', 'Standard deviation\n(number of buildings)', vmin=1, vmax=None)
-axes6[0].text(-0.12, 1.05, 'A', transform=axes6[0].transAxes,
+axes6[0].text(-0.05, 1.05, 'A', transform=axes6[0].transAxes,
               fontsize=20, fontweight='bold', va='top')
-axes6[0].text(-0.25, 0.5, 'Earthquake\n(Shaking)', transform=axes6[0].transAxes,
-              fontsize=14, fontweight='bold', va='center', rotation=90)
+axes6[0].set_ylabel('Earthquake\n(Shaking)', fontsize=14, fontweight='bold', labelpad=10)
 
 # ROW 2: Building Landslide Standard Deviation
 create_map(nepal_admin_impacts_std, 'BuildingLandslide_std', axes6[1],
           '', cmap_std, 'log', 'Standard deviation\n(number of buildings)', vmin=1, vmax=None)
-axes6[1].text(-0.12, 1.05, 'B', transform=axes6[1].transAxes,
+axes6[1].text(-0.05, 1.05, 'B', transform=axes6[1].transAxes,
               fontsize=20, fontweight='bold', va='top')
-axes6[1].text(-0.25, 0.5, 'Building\nLandslide', transform=axes6[1].transAxes,
-              fontsize=14, fontweight='bold', va='center', rotation=90)
+axes6[1].set_ylabel('Building\nLandslide', fontsize=14, fontweight='bold', labelpad=10)
 
 # ROW 3: Road Landslide Standard Deviation
 create_map(nepal_admin_impacts_std, 'RoadLandslide_std', axes6[2],
           '', cmap_std, 'log', 'Standard deviation\n(number of road segments)', vmin=1, vmax=None)
-axes6[2].text(-0.12, 1.05, 'C', transform=axes6[2].transAxes,
+axes6[2].text(-0.05, 1.05, 'C', transform=axes6[2].transAxes,
               fontsize=20, fontweight='bold', va='top')
-axes6[2].text(-0.25, 0.5, 'Road\nLandslide', transform=axes6[2].transAxes,
-              fontsize=14, fontweight='bold', va='center', rotation=90)
+axes6[2].set_ylabel('Road\nLandslide', fontsize=14, fontweight='bold', labelpad=10)
 
 fig6.tight_layout(h_pad=1.5)
-fig6.subplots_adjust(left=0.08)
+fig6.subplots_adjust(left=0.12)
 fig6.savefig(os.path.join(output_dir, "Fig6_standard_deviation.png"), dpi=300, bbox_inches='tight')
 # fig6.savefig(os.path.join(output_dir, "Fig7_standard_deviation.pdf"), bbox_inches='tight')
 print("Figure 7 saved (standard deviation)")
@@ -1972,7 +1966,7 @@ norm_a = colors.Normalize(vmin=vmin_a, vmax=vmax_a)
 sm_a = plt.cm.ScalarMappable(cmap='rainbow', norm=norm_a)
 sm_a.set_array([])
 cbar_a = plt.colorbar(sm_a, cax=cax_a)
-cbar_a.set_label('Our Relative Risk Score', fontsize=14, fontweight='bold')
+cbar_a.set_label('Relative Risk Score', fontsize=14, fontweight='bold')
 
 ax_a.xaxis.set_major_formatter(ticker.FuncFormatter(format_lon))
 ax_a.yaxis.set_major_formatter(ticker.FuncFormatter(format_lat))
