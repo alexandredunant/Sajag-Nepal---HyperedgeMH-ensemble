@@ -963,7 +963,7 @@ nepal_admin_impacts_std = nepal_admin_impacts.merge(
     std_dev_data, left_on='DISTRICT', right_on='District', how='left', suffixes=('', '_std')
 )
 
-fig6, axes6 = plt.subplots(3, 1, figsize=(16, 22))
+fig6, axes6 = plt.subplots(3, 1, figsize=(16, 14))
 
 cmap_std = 'rainbow'
 
