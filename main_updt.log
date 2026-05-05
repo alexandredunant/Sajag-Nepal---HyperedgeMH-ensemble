@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.2.24)  5 MAY 2026 11:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.2.24)  5 MAY 2026 12:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -487,207 +487,17 @@ Overfull \vbox (41.38202pt too high) has occurred while \output is active []
  [1
 
 
-{C:/Users/adunant/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
-
-Package natbib Warning: Citation `England2011' on page 2 undefined on input line 85.
-
-
-Package natbib Warning: Citation `Daniell2017' on page 2 undefined on input line 85.
-
-
-Package natbib Warning: Citation `IASC2007' on page 2 undefined on input line 85.
-
-
-Package natbib Warning: Citation `IFRC2012' on page 2 undefined on input line 85.
-
-
-Package natbib Warning: Citation `Alexander2007' on page 2 undefined on input line 85.
-
-
-Package natbib Warning: Citation `IASC2007' on page 2 undefined on input line 85.
-
-
-Package natbib Warning: Citation `Robinson2018' on page 2 undefined on input line 87.
-
-
-Package natbib Warning: Citation `Davies2015' on page 2 undefined on input line 87.
-
-
-Package natbib Warning: Citation `Bommer2002' on page 2 undefined on input line 89.
-
-
-Package natbib Warning: Citation `Wang2003' on page 2 undefined on input line 89.
-
-
-Package natbib Warning: Citation `Wang2011' on page 2 undefined on input line 89.
-
-
-Package natbib Warning: Citation `Bilham2013' on page 2 undefined on input line 89.
-
-
-Package natbib Warning: Citation `Robinson2018' on page 2 undefined on input line 89.
-
-
-Package natbib Warning: Citation `Robinson2018' on page 2 undefined on input line 89.
-
-[2]
-
-Package natbib Warning: Citation `Robinson2018' on page 3 undefined on input line 91.
-
-
-Package natbib Warning: Citation `Gill2014' on page 3 undefined on input line 91.
-
-
-Package natbib Warning: Citation `Fan2019' on page 3 undefined on input line 91.
-
-
-Package natbib Warning: Citation `Kincey2021' on page 3 undefined on input line 91.
-
-
-Package natbib Warning: Citation `Budimir2014' on page 3 undefined on input line 91.
-
-
-Package natbib Warning: Citation `Gill2022' on page 3 undefined on input line 93.
-
-
-Package natbib Warning: Citation `Ward2022' on page 3 undefined on input line 93.
-
+{C:/Users/adunant/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}] [2]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 93.
-(C:\Users\adunant\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+ (C:\Users\adunant\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-
-Package natbib Warning: Citation `Gill2014' on page 3 undefined on input line 93.
-
-
-Package natbib Warning: Citation `Mignan2014' on page 3 undefined on input line 93.
-
-
-Package natbib Warning: Citation `Tilloy2019' on page 3 undefined on input line 93.
-
-
-Package natbib Warning: Citation `Dunant2021' on page 3 undefined on input line 93.
-
-
-Package natbib Warning: Citation `Ming2022' on page 3 undefined on input line 93.
-
-
-Package natbib Warning: Citation `Hochrainer-Stigler2023' on page 3 undefined on input line 93.
-
-
-Package natbib Warning: Citation `Dunant2025' on page 3 undefined on input line 95.
-
-
-Package natbib Warning: Citation `Dunant2025' on page 3 undefined on input line 97.
-
-
-Package natbib Warning: Citation `Robinson2018' on page 3 undefined on input line 97.
-
-
-Package natbib Warning: Citation `Sijapati2024' on page 3 undefined on input line 97.
-
-[3]
-
-Package natbib Warning: Citation `Dunant2025' on page 4 undefined on input line 104.
-
-
-Package natbib Warning: Citation `Dunant2021' on page 4 undefined on input line 104.
-
-
-Package natbib Warning: Citation `Dunant2025' on page 4 undefined on input line 104.
-
-
-Package natbib Warning: Citation `dunant2021multihazards' on page 4 undefined on input line 104.
-
-[4]
-
-Package natbib Warning: Citation `Fan2019' on page 5 undefined on input line 106.
-
-
-Package natbib Warning: Citation `Kincey2021' on page 5 undefined on input line 106.
-
-
-Package natbib Warning: Citation `Robinson2018' on page 5 undefined on input line 112.
-
-
-Package natbib Warning: Citation `Field2003' on page 5 undefined on input line 112.
-
-
-Package natbib Warning: Citation `Abrahamson2008' on page 5 undefined on input line 112.
-
-
-Package natbib Warning: Citation `Allen2009' on page 5 undefined on input line 112.
-
-[5]
-<./FIGURES/Fig1_study_area_map.png, id=126, 1137.2889pt x 651.8754pt>
+) [3] [4] [5]
+<./FIGURES/Fig1_study_area_map.png, id=248, 1137.2889pt x 651.8754pt>
 File: ./FIGURES/Fig1_study_area_map.png Graphic file (type png)
 <use ./FIGURES/Fig1_study_area_map.png>
 Package pdftex.def Info: ./FIGURES/Fig1_study_area_map.png  used on input line 116.
 (pdftex.def)             Requested size: 390.0pt x 223.53453pt.
-
-
-Package natbib Warning: Citation `Dunant2025' on page 6 undefined on input line 126.
-
-[6 <./FIGURES/Fig1_study_area_map.png>]
-
-Package natbib Warning: Citation `Dunant2025' on page 7 undefined on input line 128.
-
-
-Package natbib Warning: Citation `Dunant2025' on page 7 undefined on input line 128.
-
-
-Package natbib Warning: Citation `Kincey2021' on page 7 undefined on input line 128.
-
-[7]
-
-Package natbib Warning: Citation `Dunant2025' on page 8 undefined on input line 130.
-
-
-Package natbib Warning: Citation `Kincey2021' on page 8 undefined on input line 130.
-
-[8]
-
-Package natbib Warning: Citation `Robinson2018' on page 9 undefined on input line 134.
-
-
-Package natbib Warning: Citation `VanWykDeVries2024' on page 9 undefined on input line 134.
-
-
-Package natbib Warning: Citation `Pollock2020' on page 9 undefined on input line 134.
-
-
-Package natbib Warning: Citation `Luo2023' on page 9 undefined on input line 134.
-
-
-Package natbib Warning: Citation `Hu2024' on page 9 undefined on input line 134.
-
-
-Package natbib Warning: Citation `IASC2007' on page 9 undefined on input line 134.
-
-
-Package natbib Warning: Citation `Dunant2025' on page 9 undefined on input line 136.
-
-
-Package natbib Warning: Citation `Bhandari2020' on page 9 undefined on input line 136.
-
-[9]
-
-Package natbib Warning: Citation `Robinson2018' on page 10 undefined on input line 144.
-
-
-Package natbib Warning: Citation `banick2019' on page 10 undefined on input line 146.
-
-
-Package natbib Warning: Citation `banick2019' on page 10 undefined on input line 146.
-
-[10]
-
-Package natbib Warning: Citation `NationalPlanningCommission2015' on page 11 undefined on input line 148.
-
-
-Package natbib Warning: Citation `banick2019' on page 11 undefined on input line 155.
-
-[11{C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
+ [6] [7 <./FIGURES/Fig1_study_area_map.png>] [8] [9] [10] [11] [12{C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 161.
  (C:\Users\adunant\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -696,50 +506,150 @@ Overfull \hbox (2.77173pt too wide) in paragraph at lines 179--180
 []\T1/lmr/m/n/12 This in-dex iden-ti-fies dis-tricts where the com-mu-nity is most severely threat-
  []
 
-[12{C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
-
-Package natbib Warning: Citation `NationalPlanningCommission2015' on page 13 undefined on input line 194.
-
-<./FIGURES/Fig2_exceedance_probability.png, id=179, 559.3698pt x 414.8298pt>
+[13{C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
+<./FIGURES/Fig2_exceedance_probability.png, id=367, 559.3698pt x 414.8298pt>
 File: ./FIGURES/Fig2_exceedance_probability.png Graphic file (type png)
 <use ./FIGURES/Fig2_exceedance_probability.png>
 Package pdftex.def Info: ./FIGURES/Fig2_exceedance_probability.png  used on input line 200.
 (pdftex.def)             Requested size: 292.5pt x 216.92805pt.
-[13]
-
-Package natbib Warning: Citation `Kincey2021' on page 14 undefined on input line 205.
-
-<./FIGURES/Fig3_district_impacts_ratio.png, id=189, 1022.3796pt x 929.6331pt>
+ [14]
+<./FIGURES/Fig3_district_impacts_ratio.png, id=379, 1022.3796pt x 929.6331pt>
 File: ./FIGURES/Fig3_district_impacts_ratio.png Graphic file (type png)
 <use ./FIGURES/Fig3_district_impacts_ratio.png>
 Package pdftex.def Info: ./FIGURES/Fig3_district_impacts_ratio.png  used on input line 209.
 (pdftex.def)             Requested size: 390.0pt x 354.61183pt.
-[14 <./FIGURES/Fig2_exceedance_probability.png>]
-
-Package natbib Warning: Citation `upreti_physiography_2001' on page 15 undefined on input line 214.
-
-[15 <./FIGURES/Fig3_district_impacts_ratio.png>]
-<./FIGURES/Fig4_district_exceedance_curves.png, id=205, 992.9898pt x 956.373pt>
+ [15 <./FIGURES/Fig2_exceedance_probability.png>] [16 <./FIGURES/Fig3_district_impacts_ratio.png>]
+<./FIGURES/Fig4_district_exceedance_curves.png, id=397, 992.9898pt x 956.373pt>
 File: ./FIGURES/Fig4_district_exceedance_curves.png Graphic file (type png)
 <use ./FIGURES/Fig4_district_exceedance_curves.png>
 Package pdftex.def Info: ./FIGURES/Fig4_district_exceedance_curves.png  used on input line 218.
 (pdftex.def)             Requested size: 390.0pt x 375.6253pt.
- [16] [17 <./FIGURES/Fig4_district_exceedance_curves.png>]
-<./FIGURES/Fig5_worst_case_absolute_proportional.png, id=223, 1084.7727pt x 912.7701pt>
+ [17] [18 <./FIGURES/Fig4_district_exceedance_curves.png>]
+<./FIGURES/Fig5_worst_case_absolute_proportional.png, id=416, 1084.7727pt x 912.7701pt>
 File: ./FIGURES/Fig5_worst_case_absolute_proportional.png Graphic file (type png)
 <use ./FIGURES/Fig5_worst_case_absolute_proportional.png>
 Package pdftex.def Info: ./FIGURES/Fig5_worst_case_absolute_proportional.png  used on input line 227.
 (pdftex.def)             Requested size: 390.0pt x 328.16522pt.
- [18]
-<FIGURES/Fig6_standard_deviation.png, id=232, 688.4922pt x 995.8806pt>
+ [19]
+<FIGURES/Fig6_standard_deviation.png, id=426, 688.4922pt x 995.8806pt>
 File: FIGURES/Fig6_standard_deviation.png Graphic file (type png)
 <use FIGURES/Fig6_standard_deviation.png>
 Package pdftex.def Info: FIGURES/Fig6_standard_deviation.png  used on input line 237.
 (pdftex.def)             Requested size: 292.5pt x 423.09929pt.
- [19 <./FIGURES/Fig5_worst_case_absolute_proportional.png>] [20 <./FIGURES/Fig6_standard_deviation.png>]
-<./FIGURES/Fig7_remoteness_analysis.png, id=248, 1115.1261pt x 973.9587pt>
+ [20 <./FIGURES/Fig5_worst_case_absolute_proportional.png>] [21 <./FIGURES/Fig6_standard_deviation.png>]
+<./FIGURES/Fig7_remoteness_analysis.png, id=441, 1115.1261pt x 973.9587pt>
 File: ./FIGURES/Fig7_remoteness_analysis.png Graphic file (type png)
 <use ./FIGURES/Fig7_remoteness_analysis.png>
 Package pdftex.def Info: ./FIGURES/Fig7_remoteness_analysis.png  used on input line 248.
 (pdftex.def)             Requested size: 390.0pt x 340.62315pt.
- [21 <./FIGURES/Fig7_remoteness_analysis.png>]
+ [22 <./FIGURES/Fig7_remoteness_analysis.png>]
+<./FIGURES/Fig8_risk_scores.png, id=455, 1066.9461pt x 1145.2386pt>
+File: ./FIGURES/Fig8_risk_scores.png Graphic file (type png)
+<use ./FIGURES/Fig8_risk_scores.png>
+Package pdftex.def Info: ./FIGURES/Fig8_risk_scores.png  used on input line 262.
+(pdftex.def)             Requested size: 390.0pt x 418.6115pt.
+ [23] [24 <./FIGURES/Fig8_risk_scores.png>] [25]
+
+Package natbib Warning: Citation `Koks2019' on page 26 undefined on input line 279.
+
+[26]
+
+Package natbib Warning: Citation `NationalPlanningCommission2014' on page 27 undefined on input line 289.
+
+
+Package natbib Warning: Citation `Wisner2004' on page 27 undefined on input line 289.
+
+
+Overfull \hbox (4.96997pt too wide) in paragraph at lines 293--294
+\T1/lmr/m/n/12 anal-y-sis cap-tures large-scale im-pacts from high-magnitude earth-quakes ($\OML/lmm/m/it/12 M[] >
+ []
+
+[27] [28]
+Overfull \hbox (8.0383pt too wide) in paragraph at lines 309--310
+\T1/lmr/m/n/12 Re-search Fund Multi-Hazard and Sys-temic Risk pro-gramme (NE/T01038X/1).
+ []
+
+(main_updt.bbl [29] [30]
+
+main_updt.bbl:206: LaTeX Error: Invalid UTF-8 byte sequence (Å.).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.206 ...r, S.}, \bibinfo{author}{TrogrliÄ‡, R.Å.}
+                                                  ,
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+[31]
+Underfull \hbox (badness 2096) in paragraph at lines 262--271
+\T1/lmr/m/n/12 low-probability-high-consequences events: Part I. A generic multi-
+ []
+
+
+Underfull \hbox (badness 3128) in paragraph at lines 262--271
+\T1/lmr/m/n/12 risk ap-proach.  Nat-u-ral Haz-ards 73, 1999--2022.  doi:[][]$\T1/lmtt/m/n/12 10 . 1007 /
+ []
+
+[32]) [33]
+<./FIGURES/FigS1_fragility_functions.png, id=561, 621.522pt x 673.3155pt>
+File: ./FIGURES/FigS1_fragility_functions.png Graphic file (type png)
+<use ./FIGURES/FigS1_fragility_functions.png>
+Package pdftex.def Info: ./FIGURES/FigS1_fragility_functions.png  used on input line 328.
+(pdftex.def)             Requested size: 390.0pt x 422.50609pt.
+<./FIGURES/FigS2_pga_ensemble_maps.png, id=562, 788.2248pt x 1716.1716pt>
+File: ./FIGURES/FigS2_pga_ensemble_maps.png Graphic file (type png)
+<use ./FIGURES/FigS2_pga_ensemble_maps.png>
+Package pdftex.def Info: ./FIGURES/FigS2_pga_ensemble_maps.png  used on input line 335.
+(pdftex.def)             Requested size: 292.49254pt x 483.69336pt.
+ [34
+
+ <./FIGURES/FigS1_fragility_functions.png>]
+<./FIGURES/FigS3_median_collapse_probability.png, id=569, 1389.0294pt x 2867.1918pt>
+File: ./FIGURES/FigS3_median_collapse_probability.png Graphic file (type png)
+<use ./FIGURES/FigS3_median_collapse_probability.png>
+Package pdftex.def Info: ./FIGURES/FigS3_median_collapse_probability.png  used on input line 342.
+(pdftex.def)             Requested size: 292.489pt x 483.69743pt.
+ [35 <./FIGURES/FigS2_pga_ensemble_maps.png>]
+<./FIGURES/FigS4_remoteness_clusters.png, id=575, 725.71124pt x 444.15938pt>
+File: ./FIGURES/FigS4_remoteness_clusters.png Graphic file (type png)
+<use ./FIGURES/FigS4_remoteness_clusters.png>
+Package pdftex.def Info: ./FIGURES/FigS4_remoteness_clusters.png  used on input line 349.
+(pdftex.def)             Requested size: 390.0pt x 238.69711pt.
+ [36 <./FIGURES/FigS3_median_collapse_probability.png>]
+<./FIGURES/FigS5_robinson_comparison.png, id=581, 1137.5298pt x 838.332pt>
+File: ./FIGURES/FigS5_robinson_comparison.png Graphic file (type png)
+<use ./FIGURES/FigS5_robinson_comparison.png>
+Package pdftex.def Info: ./FIGURES/FigS5_robinson_comparison.png  used on input line 356.
+(pdftex.def)             Requested size: 390.0pt x 287.42119pt.
+ [37 <./FIGURES/FigS4_remoteness_clusters.png>]
+
+Package natbib Warning: There were undefined citations.
+
+[38 <./FIGURES/FigS5_robinson_comparison.png>] (main_updt.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+ ***********
+Package rerunfilecheck Info: File `main_updt.out' has not changed.
+(rerunfilecheck)             Checksum: 3BD417E63FE871906EEC2F4B7BECB9F3;3580.
+ ) 
+Here is how much of TeX's memory you used:
+ 13623 strings out of 467867
+ 218513 string characters out of 5417366
+ 632797 words of memory out of 5000000
+ 42170 multiletter control sequences out of 15000+600000
+ 690770 words of font info for 86 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,9n,79p,2198b,637s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri7.pfb><C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss8.pfb><C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/adunant/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
+Output written on main_updt.pdf (38 pages, 115229491 bytes).
+PDF statistics:
+ 699 PDF objects out of 1000 (max. 8388607)
+ 123 named destinations out of 1000 (max. 500000)
+ 218 words of extra memory for PDF output out of 10000 (max. 10000000)
+

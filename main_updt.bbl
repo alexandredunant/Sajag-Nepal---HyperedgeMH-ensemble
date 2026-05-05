@@ -1,0 +1,381 @@
+\begin{thebibliography}{37}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Abrahamson and Silva(2008)}]{Abrahamson2008}
+\bibinfo{author}{Abrahamson, N.}, \bibinfo{author}{Silva, W.},
+  \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{Summary of the {A}brahamson and {S}ilva {NGA}
+  ground-motion relations}.
+\newblock \bibinfo{journal}{Earthquake Spectra} \bibinfo{volume}{24},
+  \bibinfo{pages}{67--97}.
+%Type = Article
+\bibitem[{Alexander(2007)}]{Alexander2007}
+\bibinfo{author}{Alexander, D.}, \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{Making research on geological hazards relevant to
+  stakeholders' needs}.
+\newblock \bibinfo{journal}{Quaternary International}
+  \bibinfo{volume}{171--172}, \bibinfo{pages}{186--192}.
+%Type = Article
+\bibitem[{Allen and Wald(2009)}]{Allen2009}
+\bibinfo{author}{Allen, T.}, \bibinfo{author}{Wald, D.}, \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{On the use of high-resolution topographic data as a
+  proxy for seismic site conditions ({V}s30)}.
+\newblock \bibinfo{journal}{Bulletin of the Seismological Society of America}
+  \bibinfo{volume}{99}, \bibinfo{pages}{935--943}.
+%Type = Article
+\bibitem[{Banick and Kawasoe(2019)}]{banick2019}
+\bibinfo{author}{Banick, R.S.}, \bibinfo{author}{Kawasoe, Y.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Measuring inequality of access: Modeling physical
+  remoteness in nepal}.
+\newblock \bibinfo{journal}{World Bank Policy Research Working Paper} .
+%Type = Misc
+\bibitem[{Bhandari et~al.(2020)Bhandari, Neupane, Hayes, Regmi and
+  Marker}]{Bhandari2020}
+\bibinfo{author}{Bhandari, D.}, \bibinfo{author}{Neupane, S.},
+  \bibinfo{author}{Hayes, P.}, \bibinfo{author}{Regmi, B.},
+  \bibinfo{author}{Marker, P.}, \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Disaster {R}isk {R}eduction and {M}anagement in
+  {N}epal: {D}elineation of {R}oles and {R}esponsibilities}.
+%Type = Article
+\bibitem[{Bilham(2013)}]{Bilham2013}
+\bibinfo{author}{Bilham, R.}, \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{Earthquakes and engineering}.
+\newblock \bibinfo{journal}{Nature} \bibinfo{volume}{494},
+  \bibinfo{pages}{32--33}.
+%Type = Article
+\bibitem[{Bommer et~al.(2002)Bommer, Oates, Cepeda, Lindholm, Strømme and
+  Selnes}]{Bommer2002}
+\bibinfo{author}{Bommer, J.J.}, \bibinfo{author}{Oates, S.},
+  \bibinfo{author}{Cepeda, J.M.}, \bibinfo{author}{Lindholm, C.},
+  \bibinfo{author}{Strømme, J.}, \bibinfo{author}{Selnes, P.B.},
+  \bibinfo{year}{2002}.
+\newblock \bibinfo{title}{An exploration of epistemic uncertainty in
+  probabilistic seismic hazard analysis of {I}beria}.
+\newblock \bibinfo{journal}{Earthquake Engineering \& Structural Dynamics}
+  \bibinfo{volume}{31}, \bibinfo{pages}{645--670}.
+%Type = Article
+\bibitem[{Budimir et~al.(2014)Budimir, Atkinson and Lewis}]{Budimir2014}
+\bibinfo{author}{Budimir, M.E.A.}, \bibinfo{author}{Atkinson, P.M.},
+  \bibinfo{author}{Lewis, H.G.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Earthquake-and-landslide events are associated with
+  more fatalities than earthquakes alone}.
+\newblock \bibinfo{journal}{Natural Hazards} \bibinfo{volume}{72},
+  \bibinfo{pages}{895--914}.
+\newblock \DOIprefix\doi{10.1007/s11069-014-1044-4}.
+%Type = Article
+\bibitem[{Daniell et~al.(2017)Daniell, Schaefer and Wenzel}]{Daniell2017}
+\bibinfo{author}{Daniell, J.}, \bibinfo{author}{Schaefer, A.},
+  \bibinfo{author}{Wenzel, F.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Losses associated with secondary effects in
+  earthquakes}.
+\newblock \bibinfo{journal}{Frontiers in Built Environment}
+  \bibinfo{volume}{3}.
+\newblock \DOIprefix\doi{10.3389/fbuil.2017.00030}.
+%Type = Article
+\bibitem[{Davies et~al.(2015)Davies, Beavan, Conradson, Densmore, Rigg,
+  Gaillard, Johnston, Milledge, Oven, Petley, Robinson, Rosser and
+  Wilson}]{Davies2015}
+\bibinfo{author}{Davies, T.}, \bibinfo{author}{Beavan, S.},
+  \bibinfo{author}{Conradson, D.}, \bibinfo{author}{Densmore, A.},
+  \bibinfo{author}{Rigg, J.}, \bibinfo{author}{Gaillard, J.},
+  \bibinfo{author}{Johnston, D.}, \bibinfo{author}{Milledge, D.},
+  \bibinfo{author}{Oven, K.}, \bibinfo{author}{Petley, D.},
+  \bibinfo{author}{Robinson, T.}, \bibinfo{author}{Rosser, N.},
+  \bibinfo{author}{Wilson, T.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Towards disaster resilience: a scenario-based
+  approach to co-producing and integrating hazard and risk knowledge}.
+\newblock \bibinfo{journal}{International Journal of Disaster Risk Reduction}
+  \bibinfo{volume}{13}, \bibinfo{pages}{242--247}.
+%Type = Book
+\bibitem[{Diamond(1997)}]{Diamond1997}
+\bibinfo{author}{Diamond, J.}, \bibinfo{year}{1997}.
+\newblock \bibinfo{title}{Guns, germs, and steel: {T}he fates of human
+  societies}.
+\newblock \bibinfo{publisher}{W. W. Norton \& Company}.
+%Type = Article
+\bibitem[{Dunant(2021)}]{Dunant2021}
+\bibinfo{author}{Dunant, A.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Are {W}e {M}issing the {T}arget? {A}
+  {B}ias-{V}ariance {P}erspective on {M}ulti-{H}azard {R}isk {A}ssessment}.
+\newblock \bibinfo{journal}{Frontiers in Earth Science} \bibinfo{volume}{9},
+  \bibinfo{pages}{685301}.
+\newblock \DOIprefix\doi{10.3389/feart.2021.685301}.
+%Type = Article
+\bibitem[{Dunant et~al.(2021)Dunant, Bebbington, Davies and
+  Horton}]{dunant2021multihazards}
+\bibinfo{author}{Dunant, A.}, \bibinfo{author}{Bebbington, M.},
+  \bibinfo{author}{Davies, T.}, \bibinfo{author}{Horton, P.},
+  \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Multihazards scenario generator: A network-based
+  simulation of natural disasters}.
+\newblock \bibinfo{journal}{Risk analysis} \bibinfo{volume}{41},
+  \bibinfo{pages}{2154--2176}.
+%Type = Article
+\bibitem[{Dunant et~al.(2025)Dunant, Robinson, Densmore, Rosser, Rajbhandari,
+  Kincey, Li, Awasthi, Van Wyk De~Vries, Guragain, Harvey and
+  Dadson}]{Dunant2025}
+\bibinfo{author}{Dunant, A.}, \bibinfo{author}{Robinson, T.R.},
+  \bibinfo{author}{Densmore, A.L.}, \bibinfo{author}{Rosser, N.J.},
+  \bibinfo{author}{Rajbhandari, R.M.}, \bibinfo{author}{Kincey, M.},
+  \bibinfo{author}{Li, S.}, \bibinfo{author}{Awasthi, P.R.},
+  \bibinfo{author}{Van Wyk De~Vries, M.}, \bibinfo{author}{Guragain, R.},
+  \bibinfo{author}{Harvey, E.}, \bibinfo{author}{Dadson, S.},
+  \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Impacts from cascading multi-hazards using
+  hypergraphs: {A} case study from the 2015 {G}orkha earthquake in {N}epal}.
+\newblock \bibinfo{journal}{Natural Hazards and Earth System Sciences}
+  \bibinfo{volume}{25}, \bibinfo{pages}{267--285}.
+\newblock \DOIprefix\doi{10.5194/nhess-25-267-2025}.
+%Type = Article
+\bibitem[{England and Jackson(2011)}]{England2011}
+\bibinfo{author}{England, P.}, \bibinfo{author}{Jackson, J.},
+  \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Uncharted seismic risk}.
+\newblock \bibinfo{journal}{Nature Geoscience} \bibinfo{volume}{4},
+  \bibinfo{pages}{348--349}.
+\newblock \DOIprefix\doi{10.1038/ngeo1168}.
+%Type = Article
+\bibitem[{Fan et~al.(2019)Fan, Scaringi, Korup, West, van Westen, Tanyas,
+  Hovius, Hales, Amatya, Regmi et~al.}]{Fan2019}
+\bibinfo{author}{Fan, X.}, \bibinfo{author}{Scaringi, G.},
+  \bibinfo{author}{Korup, O.}, \bibinfo{author}{West, A.J.},
+  \bibinfo{author}{van Westen, C.J.}, \bibinfo{author}{Tanyas, H.},
+  \bibinfo{author}{Hovius, N.}, \bibinfo{author}{Hales, T.C.},
+  \bibinfo{author}{Amatya, P.M.}, \bibinfo{author}{Regmi, R.R.}, et~al.,
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Earthquake-induced chains of geomorphic hazards:
+  {P}rogress and perspectives}.
+\newblock \bibinfo{journal}{Journal of Geophysical Research}
+  \bibinfo{volume}{124}, \bibinfo{pages}{1442--1464}.
+%Type = Article
+\bibitem[{Field et~al.(2003)Field, Jordan and Cornell}]{Field2003}
+\bibinfo{author}{Field, E.}, \bibinfo{author}{Jordan, T.},
+  \bibinfo{author}{Cornell, C.}, \bibinfo{year}{2003}.
+\newblock \bibinfo{title}{{O}pen{SHA}: a developing community-modelling
+  environment for seismic hazard analysis}.
+\newblock \bibinfo{journal}{Seismological Research Letters}
+  \bibinfo{volume}{74}, \bibinfo{pages}{406--419}.
+%Type = Article
+\bibitem[{Gill et~al.(2022)Gill, Duncan, Ciurean, Smale, Stuparu, Schlumberger,
+  de~Ruiter, Tiggeloven, Torresan, Gottardo, Mysiak, Harris, Petrescu, Girard,
+  Khazai, Claassen, Dai, Champion, Daloz et~al.}]{Gill2022}
+\bibinfo{author}{Gill, J.C.}, \bibinfo{author}{Duncan, M.},
+  \bibinfo{author}{Ciurean, R.}, \bibinfo{author}{Smale, L.},
+  \bibinfo{author}{Stuparu, D.}, \bibinfo{author}{Schlumberger, J.},
+  \bibinfo{author}{de~Ruiter, M.}, \bibinfo{author}{Tiggeloven, T.},
+  \bibinfo{author}{Torresan, S.}, \bibinfo{author}{Gottardo, S.},
+  \bibinfo{author}{Mysiak, J.}, \bibinfo{author}{Harris, R.},
+  \bibinfo{author}{Petrescu, E.C.}, \bibinfo{author}{Girard, T.},
+  \bibinfo{author}{Khazai, B.}, \bibinfo{author}{Claassen, J.},
+  \bibinfo{author}{Dai, R.}, \bibinfo{author}{Champion, A.},
+  \bibinfo{author}{Daloz, A.S.}, et~al., \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Handbook of multi-hazard, multi-risk definitions and
+  concepts} \DOIprefix\doi{10.5281/zenodo.7135138}.
+%Type = Article
+\bibitem[{Gill and Malamud(2014)}]{Gill2014}
+\bibinfo{author}{Gill, J.C.}, \bibinfo{author}{Malamud, B.D.},
+  \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Reviewing and visualizing the interactions of natural
+  hazards: {I}nteractions of {N}atural {H}azards}.
+\newblock \bibinfo{journal}{Reviews of Geophysics} \bibinfo{volume}{52},
+  \bibinfo{pages}{680--722}.
+\newblock \DOIprefix\doi{10.1002/2013RG000445}.
+%Type = Misc
+\bibitem[{{Government of Nepal, National Planning
+  Commission}(2015)}]{NationalPlanningCommission2015}
+\bibinfo{author}{{Government of Nepal, National Planning Commission}},
+  \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Nepal {E}arthquake 2015 {P}ost {D}isaster {N}eeds
+  {A}ssessment: {V}olume {A}: {K}ey {F}indings}.
+%Type = Article
+\bibitem[{Hochrainer-Stigler et~al.(2023)Hochrainer-Stigler, Trogrlić, Reiter,
+  Ward, de~Ruiter, Duncan, Torresan, Ciurean, Mysiak, Stuparu and
+  Gottardo}]{Hochrainer-Stigler2023}
+\bibinfo{author}{Hochrainer-Stigler, S.}, \bibinfo{author}{Trogrlić, R.�.},
+  \bibinfo{author}{Reiter, K.}, \bibinfo{author}{Ward, P.J.},
+  \bibinfo{author}{de~Ruiter, M.C.}, \bibinfo{author}{Duncan, M.J.},
+  \bibinfo{author}{Torresan, S.}, \bibinfo{author}{Ciurean, R.},
+  \bibinfo{author}{Mysiak, J.}, \bibinfo{author}{Stuparu, D.},
+  \bibinfo{author}{Gottardo, S.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Toward a framework for systemic multi-hazard and
+  multi-risk assessment and management}.
+\newblock \bibinfo{journal}{iScience} \bibinfo{volume}{26}.
+\newblock \DOIprefix\doi{10.1016/j.isci.2023.106736}.
+%Type = Article
+\bibitem[{Hu and Bao(2024)}]{Hu2024}
+\bibinfo{author}{Hu, H.}, \bibinfo{author}{Bao, Y.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Seismic fragility functions for earthquake-induced
+  landslide risk assessment using identified optimal earthquake intensity
+  measures}.
+\newblock \bibinfo{journal}{CATENA} \bibinfo{volume}{234},
+  \bibinfo{pages}{107589}.
+\newblock \DOIprefix\doi{10.1016/j.catena.2023.107589}.
+%Type = Misc
+\bibitem[{{IASC -- Inter-Agency Standing Committee}(2007)}]{IASC2007}
+\bibinfo{author}{{IASC -- Inter-Agency Standing Committee}},
+  \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{Inter-agency {C}ontingency {P}lanning {G}uidelines
+  for {H}umanitarian {A}ssistance}.
+%Type = Misc
+\bibitem[{{IFRC -- International Federation of Red Cross and Red Crescent
+  Societies}(2012)}]{IFRC2012}
+\bibinfo{author}{{IFRC -- International Federation of Red Cross and Red
+  Crescent Societies}}, \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{Contingency {P}lanning {G}uide}.
+%Type = Article
+\bibitem[{Kincey et~al.(2021)Kincey, Rosser, Robinson, Densmore, Shrestha,
+  Pujara, Oven, Williams and Swirad}]{Kincey2021}
+\bibinfo{author}{Kincey, M.E.}, \bibinfo{author}{Rosser, N.J.},
+  \bibinfo{author}{Robinson, T.R.}, \bibinfo{author}{Densmore, A.L.},
+  \bibinfo{author}{Shrestha, R.}, \bibinfo{author}{Pujara, D.S.},
+  \bibinfo{author}{Oven, K.J.}, \bibinfo{author}{Williams, J.G.},
+  \bibinfo{author}{Swirad, Z.M.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Evolution of coseismic and post-seismic landsliding
+  after the 2015 {M}w 7.8 {G}orkha earthquake, {N}epal}.
+\newblock \bibinfo{journal}{Journal of Geophysical Research: Earth Surface}
+  \bibinfo{volume}{126}.
+\newblock \DOIprefix\doi{10.1029/2020JF005803}.
+%Type = Article
+\bibitem[{Luo et~al.(2023)Luo, Zhang, Zhang, He and Yin}]{Luo2023}
+\bibinfo{author}{Luo, H.}, \bibinfo{author}{Zhang, L.}, \bibinfo{author}{Zhang,
+  L.}, \bibinfo{author}{He, J.}, \bibinfo{author}{Yin, K.},
+  \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Vulnerability of buildings to landslides: {T}he state
+  of the art and future needs}.
+\newblock \bibinfo{journal}{Earth-Science Reviews} \bibinfo{volume}{238},
+  \bibinfo{pages}{104329}.
+\newblock \DOIprefix\doi{10.1016/j.earscirev.2023.104329}.
+%Type = Article
+\bibitem[{Mignan et~al.(2014)Mignan, Wiemer and Giardini}]{Mignan2014}
+\bibinfo{author}{Mignan, A.}, \bibinfo{author}{Wiemer, S.},
+  \bibinfo{author}{Giardini, D.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{The quantification of
+  low-probability-high-consequences events: {P}art {I}. {A} generic multi-risk
+  approach}.
+\newblock \bibinfo{journal}{Natural Hazards} \bibinfo{volume}{73},
+  \bibinfo{pages}{1999--2022}.
+\newblock \DOIprefix\doi{10.1007/s11069-014-1178-4}.
+%Type = Article
+\bibitem[{Ming et~al.(2022)Ming, Liang, Dawson, Xia and Hou}]{Ming2022}
+\bibinfo{author}{Ming, X.}, \bibinfo{author}{Liang, Q.},
+  \bibinfo{author}{Dawson, R.}, \bibinfo{author}{Xia, X.},
+  \bibinfo{author}{Hou, J.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{A quantitative multi-hazard risk assessment framework
+  for compound flooding considering hazard inter-dependencies and
+  interactions}.
+\newblock \bibinfo{journal}{Journal of Hydrology} \bibinfo{volume}{607},
+  \bibinfo{pages}{127477}.
+%Type = Article
+\bibitem[{Pollock and Wartman(2020)}]{Pollock2020}
+\bibinfo{author}{Pollock, W.}, \bibinfo{author}{Wartman, J.},
+  \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Human {V}ulnerability to {L}andslides}.
+\newblock \bibinfo{journal}{GeoHealth} \bibinfo{volume}{4},
+  \bibinfo{pages}{e2020GH000287}.
+\newblock \DOIprefix\doi{10.1029/2020GH000287}.
+%Type = Article
+\bibitem[{Robinson et~al.(2018)Robinson, Rosser, Densmore, Oven, Shrestha and
+  Guragain}]{Robinson2018}
+\bibinfo{author}{Robinson, T.}, \bibinfo{author}{Rosser, N.},
+  \bibinfo{author}{Densmore, A.}, \bibinfo{author}{Oven, K.},
+  \bibinfo{author}{Shrestha, S.}, \bibinfo{author}{Guragain, R.},
+  \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Use of scenario ensembles for deriving seismic risk}.
+\newblock \bibinfo{journal}{Proceedings of the National Academy of Sciences}
+  \bibinfo{volume}{115}, \bibinfo{pages}{E9532--E9541}.
+\newblock \DOIprefix\doi{10.1073/pnas.1807433115}.
+%Type = Article
+\bibitem[{Sijapati et~al.(2024)Sijapati, Robinson, Densmore, Awasthi, Dunant,
+  Li, Rajbhandari, Rosser, Johnson, Oven, van Wyk~de Vries and
+  Heiselberg}]{Sijapati2024}
+\bibinfo{author}{Sijapati, S.}, \bibinfo{author}{Robinson, T.},
+  \bibinfo{author}{Densmore, A.}, \bibinfo{author}{Awasthi, P.},
+  \bibinfo{author}{Dunant, A.}, \bibinfo{author}{Li, S.},
+  \bibinfo{author}{Rajbhandari, R.}, \bibinfo{author}{Rosser, N.},
+  \bibinfo{author}{Johnson, A.}, \bibinfo{author}{Oven, K.},
+  \bibinfo{author}{van Wyk~de Vries, M.}, \bibinfo{author}{Heiselberg, S.},
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Needs and uses of scientific information by
+  humanitarian clusters in {N}epal}.
+\newblock \bibinfo{journal}{International Journal of Disaster Risk Reduction}
+  \bibinfo{note}{In review}.
+%Type = Article
+\bibitem[{Tilloy et~al.(2019)Tilloy, Malamud, Winter and
+  Joly-Laugel}]{Tilloy2019}
+\bibinfo{author}{Tilloy, A.}, \bibinfo{author}{Malamud, B.D.},
+  \bibinfo{author}{Winter, H.}, \bibinfo{author}{Joly-Laugel, A.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{A review of quantification methodologies for
+  multi-hazard interrelationships}.
+\newblock \bibinfo{journal}{Earth-Science Reviews} \bibinfo{volume}{196},
+  \bibinfo{pages}{102881}.
+\newblock \DOIprefix\doi{10.1016/j.earscirev.2019.102881}.
+%Type = Article
+\bibitem[{Upreti(2001)}]{upreti_physiography_2001}
+\bibinfo{author}{Upreti, B.}, \bibinfo{year}{2001}.
+\newblock \bibinfo{title}{Physiography and geology of {Nepal} and their bearing
+  on the landslide problem}.
+\newblock \bibinfo{journal}{Landslide Hazard Mitigation in the Hindu
+  Kush-Himalayas} \bibinfo{note}{Publisher: ICIMOD}.
+%Type = Article
+\bibitem[{Van Wyk De~Vries et~al.(2024)Van Wyk De~Vries, Dunant, Johnson,
+  Harvey, Li, Arrell, Baniya, Basnet, Basyal, Bhotia, Dadson, Densmore, Dong,
+  Kincey, Oven, Puri and Rosser}]{VanWykDeVries2024}
+\bibinfo{author}{Van Wyk De~Vries, M.}, \bibinfo{author}{Dunant, A.},
+  \bibinfo{author}{Johnson, A.L.}, \bibinfo{author}{Harvey, E.L.},
+  \bibinfo{author}{Li, S.}, \bibinfo{author}{Arrell, K.},
+  \bibinfo{author}{Baniya, J.}, \bibinfo{author}{Basnet, D.},
+  \bibinfo{author}{Basyal, G.K.}, \bibinfo{author}{Bhotia, N.D.},
+  \bibinfo{author}{Dadson, S.J.}, \bibinfo{author}{Densmore, A.L.},
+  \bibinfo{author}{Dong, T.B.}, \bibinfo{author}{Kincey, M.E.},
+  \bibinfo{author}{Oven, K.}, \bibinfo{author}{Puri, A.},
+  \bibinfo{author}{Rosser, N.J.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Brief {C}ommunication: {W}eak correlation between
+  building damage and loss of life from landslides}
+  \DOIprefix\doi{10.5194/nhess-2024-40}.
+%Type = Article
+\bibitem[{Wang(2003)}]{Wang2003}
+\bibinfo{author}{Wang, Z.}, \bibinfo{year}{2003}.
+\newblock \bibinfo{title}{Seismic hazard assessment: issues and alternatives}.
+\newblock \bibinfo{journal}{Pure and Applied Geophysics} \bibinfo{volume}{160},
+  \bibinfo{pages}{1--23}.
+%Type = Article
+\bibitem[{Wang(2011)}]{Wang2011}
+\bibinfo{author}{Wang, Z.}, \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Seismic hazard assessment and probabilities}.
+\newblock \bibinfo{journal}{Journal of Seismology} \bibinfo{volume}{15},
+  \bibinfo{pages}{439--454}.
+%Type = Article
+\bibitem[{Ward et~al.(2022)Ward, Daniell, Duncan, Dunne, Hananel,
+  Hochrainer-Stigler, Tijssen, Torresan, Ciurean, Gill, Sillmann, Couasnon,
+  Koks, Padrón-Fumero, Tatman, Tronstad~Lund, Adesiyun, Aerts, Alabaster
+  et~al.}]{Ward2022}
+\bibinfo{author}{Ward, P.J.}, \bibinfo{author}{Daniell, J.},
+  \bibinfo{author}{Duncan, M.}, \bibinfo{author}{Dunne, A.},
+  \bibinfo{author}{Hananel, C.}, \bibinfo{author}{Hochrainer-Stigler, S.},
+  \bibinfo{author}{Tijssen, A.}, \bibinfo{author}{Torresan, S.},
+  \bibinfo{author}{Ciurean, R.}, \bibinfo{author}{Gill, J.C.},
+  \bibinfo{author}{Sillmann, J.}, \bibinfo{author}{Couasnon, A.},
+  \bibinfo{author}{Koks, E.}, \bibinfo{author}{Padrón-Fumero, N.},
+  \bibinfo{author}{Tatman, S.}, \bibinfo{author}{Tronstad~Lund, M.},
+  \bibinfo{author}{Adesiyun, A.}, \bibinfo{author}{Aerts, J.C.J.H.},
+  \bibinfo{author}{Alabaster, A.}, et~al., \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Invited perspectives: {A} research agenda towards
+  disaster risk management pathways in multi-(hazard-)risk assessment}.
+\newblock \bibinfo{journal}{Natural Hazards and Earth System Sciences}
+  \bibinfo{volume}{22}, \bibinfo{pages}{1487--1497}.
+\newblock \DOIprefix\doi{10.5194/nhess-22-1487-2022}.
+
+\end{thebibliography}
