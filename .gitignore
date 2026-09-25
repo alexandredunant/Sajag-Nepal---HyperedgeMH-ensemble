@@ -62,3 +62,6 @@ main_updt.pdf
 
 # Script outputs in all formats; only FIGURES/*.png is used by main_updt.tex
 FIGURES/formats/
+
+# Local figure backups (too large for Overleaf sync)
+Archive/Fig1_backup_*/
