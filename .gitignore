@@ -59,3 +59,6 @@ data/shp/hermes_NPL_new_wgs_2.shp
 data/shp/hermes_NPL_new_wgs_2.shp.xml
 data/shp/hermes_NPL_new_wgs_2.shx
 main_updt.pdf
+
+# Script outputs in all formats; only FIGURES/*.png is used by main_updt.tex
+FIGURES/formats/
