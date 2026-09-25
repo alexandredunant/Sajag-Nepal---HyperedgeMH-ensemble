@@ -751,6 +751,8 @@ def plot_exceedance_by_physiography(data, impact_type, ax, label, add_inset=Fals
         # Ensure 'Terai' is correctly mapped
         nepal_admin_with_physio['Physiography'] = nepal_admin_with_physio['Physiography'].replace('Tarai', 'Terai')
         nepal_admin_with_physio['Physiography'] = nepal_admin_with_physio['Physiography'].fillna('Unknown')
+        # Project to UTM 45N so the map is not stretched east-west (degrees are not square at ~28N)
+        nepal_admin_with_physio = nepal_admin_with_physio.to_crs("EPSG:32645")
         nepal_admin_with_physio.plot(
             column='Physiography',
             ax=inset_ax,
@@ -759,9 +761,17 @@ def plot_exceedance_by_physiography(data, impact_type, ax, label, add_inset=Fals
             linewidth=0.3,
             legend=False
         )
+        # White box fitted to the map (with a small margin) so the curves behind are masked
+        minx, miny, maxx, maxy = nepal_admin_with_physio.total_bounds
+        pad = 0.05 * (maxx - minx)
+        inset_ax.set_xlim(minx - pad, maxx + pad)
+        inset_ax.set_ylim(miny - pad, maxy + pad)
+        inset_ax.set_aspect('equal', adjustable='box')
+        inset_ax.set_facecolor('white')
         inset_ax.set_xticks([])
         inset_ax.set_yticks([])
-        inset_ax.set_aspect('equal', adjustable='datalim')
+        inset_ax.tick_params(which='both', length=0)
+        inset_ax.minorticks_off()
         # inset_ax.set_title('Physiography', fontsize=14, fontweight='bold')
 
     return ax
