@@ -743,7 +743,7 @@ def plot_exceedance_by_physiography(data, impact_type, ax, label, add_inset=Fals
     )
 
     if add_inset:
-        inset_ax = ax.inset_axes([0.4, 0.6, 0.5, 0.35])   # Centered inset (left, bottom, width, height)
+        inset_ax = ax.inset_axes([0.3, 0.6, 0.53, 0.35])   # (left, bottom, width, height); map anchored to right edge, next to legend
         nepal_admin_with_physio = nepal_admin.merge(
             pd.DataFrame(list(district_physiography.items()), columns=['DISTRICT', 'Physiography']),
             on='DISTRICT', how='left'
@@ -767,6 +767,7 @@ def plot_exceedance_by_physiography(data, impact_type, ax, label, add_inset=Fals
         inset_ax.set_xlim(minx - pad, maxx + pad)
         inset_ax.set_ylim(miny - pad, maxy + pad)
         inset_ax.set_aspect('equal', adjustable='box')
+        inset_ax.set_anchor('E')
         inset_ax.set_facecolor('white')
         inset_ax.set_xticks([])
         inset_ax.set_yticks([])
