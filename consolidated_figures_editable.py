@@ -712,11 +712,11 @@ def plot_exceedance_by_physiography(data, impact_type, ax, label, add_inset=Fals
     ax.set_xlim(1, 150000)
     ax.set_ylim(0, 1)
     if impact_type == 'Earthquake':
-        xlabel_text = 'Number of Affected Buildings by Shaking'
+        xlabel_text = 'Number of buildings affected by shaking'
     elif impact_type == 'BuildingLandslide':
-        xlabel_text = 'Number of Affected Buildings by Landslides'
+        xlabel_text = 'Number of buildings affected by landslides'
     elif impact_type == 'RoadLandslide':
-        xlabel_text = 'Number of Affected Roads by Landslides'
+        xlabel_text = 'Number of road segments affected by landslides'
     else:
         xlabel_text = 'Number of Impacts'
     ax.set_xlabel(xlabel_text, fontsize=14, fontweight='bold')
@@ -1184,7 +1184,7 @@ norm_a = colors.Normalize(vmin=0, vmax=1)
 sm_a = plt.cm.ScalarMappable(cmap='Blues', norm=norm_a)
 sm_a.set_array([])
 cbar_a = plt.colorbar(sm_a, cax=cax_a)
-cbar_a.set_label('Remoteness Index (Health Posts)', fontsize=14, fontweight='bold')
+cbar_a.set_label('Remoteness index: health facilities', fontsize=14, fontweight='bold')
 cbar_a.ax.tick_params(labelsize=12)
 
 ax_a.xaxis.set_major_formatter(mticker.FuncFormatter(format_lon))
@@ -1203,8 +1203,8 @@ ax_b = axes9[0, 1]
 ax_b.scatter(nepal_admin_risk['DHQ_Normal'], nepal_admin_risk['Health_Normal'],
             alpha=0.7, s=60, edgecolors='black', linewidth=0.5)
 ax_b.plot([0, 1], [0, 1], 'k--', alpha=0.5, linewidth=1.5)
-ax_b.set_xlabel('District HQ Remoteness Index', fontsize=14, fontweight='bold')
-ax_b.set_ylabel('Health Posts Remoteness Index', fontsize=14, fontweight='bold')
+ax_b.set_xlabel('Remoteness index: district HQ', fontsize=14, fontweight='bold')
+ax_b.set_ylabel('Remoteness index: health facilities', fontsize=14, fontweight='bold')
 ax_b.tick_params(axis='both', labelsize=12)
 ax_b.grid(True, linestyle='--', alpha=0.7, linewidth=0.5)
 ax_b.set_xlim(0, 1)
@@ -1457,7 +1457,7 @@ norm_a = colors.Normalize(vmin=0, vmax=Vm)
 sm_a = plt.cm.ScalarMappable(cmap='rainbow', norm=norm_a)
 sm_a.set_array([])
 cbar_a = plt.colorbar(sm_a, cax=cax_a)
-cbar_a.set_label('Absolute Compounding Risk Score', fontsize=14, fontweight='bold')
+cbar_a.set_label('Absolute risk score', fontsize=14, fontweight='bold')
 cbar_a.ax.tick_params(labelsize=12)
 
 ax_a.xaxis.set_major_formatter(mticker.FuncFormatter(format_lon))
@@ -1502,7 +1502,7 @@ norm_b = colors.Normalize(vmin=0, vmax=1)
 sm_b = plt.cm.ScalarMappable(cmap='rainbow', norm=norm_b)
 sm_b.set_array([])
 cbar_b = plt.colorbar(sm_b, cax=cax_b)
-cbar_b.set_label('Normalized Risk Score', fontsize=14, fontweight='bold')
+cbar_b.set_label('Normalised risk score', fontsize=14, fontweight='bold')
 cbar_b.ax.tick_params(labelsize=12)
 
 ax_b.xaxis.set_major_formatter(mticker.FuncFormatter(format_lon))
@@ -1924,24 +1924,31 @@ else:
 print("\n" + "="*70 + "\n")
 
 
-# %% Figure S5 - Robinson Risk Score Comparison
-print("Creating Figure S5: Robinson Risk Score Comparison (New 2x2 Layout)...")
+# %% Figure 9 - Robinson Risk Score Comparison (moved from SI, was Fig S5)
+print("Creating Figure 9: Robinson risk score comparison...")
+from scipy.stats import spearmanr
+from matplotlib.gridspec import GridSpec
 
 # Filter to matched districts with complete data
 plot_data = nepal_admin_comparison[
     nepal_admin_comparison['Robinson_Risk_Score'].notna() &
     nepal_admin_comparison['RiskScore_Normalized'].notna()
 ].copy()
-
 print(f"Plotting {len(plot_data)} districts with complete data")
 
-# Create figure with 2x2 subplots
-fig_rob, axes_rob = plt.subplots(2, 2, figsize=(16, 12.8))
+LABEL_ROB = 'Robinson risk score'
+LABEL_NORM = 'Normalised risk score'
 
-# Convert to Web Mercator for contextily
+# Layout: A (map) and B (scatter) stacked on the left, C (ranked bars) spanning the right
+fig_rob = plt.figure(figsize=(18, 14))
+gs = GridSpec(2, 2, figure=fig_rob, width_ratios=[1.35, 1], height_ratios=[1, 1.15],
+              wspace=0.25, hspace=0.25)
+ax_a = fig_rob.add_subplot(gs[0, 0])
+ax_b = fig_rob.add_subplot(gs[1, 0])
+ax_c = fig_rob.add_subplot(gs[:, 1])
+
 plot_data_mercator = plot_data.to_crs("EPSG:3857")
 
-# Helper for coordinate formatting
 def format_lon(x, pos):
     lon = x / 20037508.34 * 180
     return f'{lon:.1f}E'
@@ -1951,157 +1958,86 @@ def format_lat(y, pos):
     return f'{lat:.1f}N'
 
 # =============================================================================
-# PANEL A (Top Left): Map of Relative Risk (Our Normalized)
+# PANEL A: Map of Robinson risk score
 # =============================================================================
-ax_a = axes_rob[0, 0]
-
-vmin_a = np.min(plot_data_mercator['RiskScore_Normalized'])
-vmax_a = np.max(plot_data_mercator['RiskScore_Normalized'])
-
-plot_data_mercator.plot(
-    column='RiskScore_Normalized',
-    ax=ax_a,
-    cmap='rainbow',
-    vmin=vmin_a,
-    vmax=vmax_a,
-    edgecolor='gray',
-    linewidth=0.3,
-    alpha=0.7,
-    legend=False
-)
-
+vmin_a = np.min(plot_data_mercator['Robinson_Risk_Score'])
+vmax_a = np.max(plot_data_mercator['Robinson_Risk_Score'])
+plot_data_mercator.plot(column='Robinson_Risk_Score', ax=ax_a, cmap='rainbow',
+                        vmin=vmin_a, vmax=vmax_a, edgecolor='gray', linewidth=0.3,
+                        alpha=0.7, legend=False)
 try:
     import contextily as ctx
-    ctx.add_basemap(ax_a, crs=plot_data_mercator.crs,
-                   source=ctx.providers.OpenTopoMap,
-                   alpha=0.4, attribution=False, zoom=8)
+    ctx.add_basemap(ax_a, crs=plot_data_mercator.crs, source=ctx.providers.OpenTopoMap,
+                    alpha=0.4, attribution=False, zoom=8)
 except Exception as e:
     print(f"Could not add basemap to Panel A: {e}")
     ax_a.set_facecolor('lightgray')
 
-# Colorbar for A
 divider_a = make_axes_locatable(ax_a)
 cax_a = divider_a.append_axes("right", size="3%", pad=0.1)
-norm_a = colors.Normalize(vmin=vmin_a, vmax=vmax_a)
-sm_a = plt.cm.ScalarMappable(cmap='rainbow', norm=norm_a)
+sm_a = plt.cm.ScalarMappable(cmap='rainbow', norm=colors.Normalize(vmin=vmin_a, vmax=vmax_a))
 sm_a.set_array([])
 cbar_a = plt.colorbar(sm_a, cax=cax_a)
-cbar_a.set_label('Relative Risk Score', fontsize=14, fontweight='bold')
-
+cbar_a.set_label(LABEL_ROB, fontsize=14, fontweight='bold')
 ax_a.xaxis.set_major_formatter(ticker.FuncFormatter(format_lon))
 ax_a.yaxis.set_major_formatter(ticker.FuncFormatter(format_lat))
 ax_a.tick_params(axis='both', labelsize=10)
-ax_a.set_title('A)', fontsize=14, fontweight='bold', loc='left')
+ax_a.set_title('A', fontsize=16, fontweight='bold', loc='left')
 
 # =============================================================================
-# PANEL B (Top Right): Map of Robinson Risk
+# PANEL B: Scatter plot with least-squares fit and 1:1 line
 # =============================================================================
-ax_b = axes_rob[0, 1]
+x_rob = plot_data['Robinson_Risk_Score'].to_numpy()
+y_norm = plot_data['RiskScore_Normalized'].to_numpy()
+ax_b.scatter(x_rob, y_norm, s=60, alpha=0.6, color='#ff7f0e',
+             marker='o', edgecolors='black', linewidth=0.5, zorder=3)
 
-vmin_b = np.min(plot_data_mercator['Robinson_Risk_Score'])
-vmax_b = np.max(plot_data_mercator['Robinson_Risk_Score'])
+xx = np.array([0.0, 1.05])
+slope, intercept = np.polyfit(x_rob, y_norm, 1)
+ax_b.plot(xx, slope * xx + intercept, color='red', linewidth=2, zorder=2,
+          label='Least-squares fit')
+ax_b.plot(xx, xx, 'k--', linewidth=1.5, zorder=2, label='1:1 line')
 
-plot_data_mercator.plot(
-    column='Robinson_Risk_Score',
-    ax=ax_b,
-    cmap='rainbow',
-    vmin=vmin_b,
-    vmax=vmax_b,
-    edgecolor='gray',
-    linewidth=0.3,
-    alpha=0.7,
-    legend=False
-)
+rho, p_rho = spearmanr(x_rob, y_norm)
+print(f"Spearman rho (Robinson vs normalised) = {rho:.3f} (p = {p_rho:.2e}, n = {len(x_rob)})")
+ax_b.text(0.05, 0.95, f'Spearman $\\rho$ = {rho:.2f}', transform=ax_b.transAxes,
+          fontsize=14, verticalalignment='top',
+          bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
 
-try:
-    ctx.add_basemap(ax_b, crs=plot_data_mercator.crs,
-                   source=ctx.providers.OpenTopoMap,
-                   alpha=0.4, attribution=False, zoom=8)
-except:
-    ax_b.set_facecolor('lightgray')
-
-# Colorbar for B
-divider_b = make_axes_locatable(ax_b)
-cax_b = divider_b.append_axes("right", size="3%", pad=0.1)
-norm_b = colors.Normalize(vmin=vmin_b, vmax=vmax_b)
-sm_b = plt.cm.ScalarMappable(cmap='rainbow', norm=norm_b)
-sm_b.set_array([])
-cbar_b = plt.colorbar(sm_b, cax=cax_b)
-cbar_b.set_label('Robinson et al. (2018) Risk Score', fontsize=14, fontweight='bold')
-
-ax_b.xaxis.set_major_formatter(ticker.FuncFormatter(format_lon))
-ax_b.yaxis.set_major_formatter(ticker.FuncFormatter(format_lat))
-ax_b.tick_params(axis='both', labelsize=10)
-ax_b.set_title('B)', fontsize=14, fontweight='bold', loc='left')
+ax_b.set_xlabel(LABEL_ROB, fontsize=14, fontweight='bold')
+ax_b.set_ylabel(LABEL_NORM, fontsize=14, fontweight='bold')
+ax_b.set_title('B', fontsize=16, fontweight='bold', loc='left')
+ax_b.legend(loc='lower right', fontsize=12)
+ax_b.grid(True, alpha=0.3, linestyle='--')
+ax_b.set_xlim(0.4, 1.05)
+ax_b.set_ylim(0.0, 1.05)
+ax_b.set_aspect('equal', adjustable='box')
 
 # =============================================================================
-# PANEL C (Bottom Left): Scatter Plot
+# PANEL C: District-wise bars ordered by Robinson risk score
 # =============================================================================
-ax_c = axes_rob[1, 0]
-
-ax_c.scatter(plot_data['Robinson_Risk_Score'], plot_data['RiskScore_Normalized'],
-            s=60, alpha=0.6, color='#ff7f0e', label='Districts',
-            marker='o', edgecolors='black', linewidth=0.5)
-
-# 1:1 line
-# ax_c.plot([0, 1], [0, 1], 'k--', linewidth=1.5, alpha=0.5, label='1:1 line')
-
-# Correlation
-from scipy.stats import pearsonr
-corr, _ = pearsonr(plot_data['Robinson_Risk_Score'], plot_data['RiskScore_Normalized'])
-ax_c.text(0.05, 0.95, f'r = {corr:.3f}', transform=ax_c.transAxes,
-         fontsize=14, verticalalignment='top',
-         bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
-
-ax_c.set_xlabel('Robinson Risk Score', fontsize=14, fontweight='bold')
-ax_c.set_ylabel('Relative Risk Score', fontsize=14, fontweight='bold')
-ax_c.set_title('C)', fontsize=14, fontweight='bold', loc='left')
-ax_c.grid(True, alpha=0.3, linestyle='--')
-ax_c.set_xlim(0.4, 1.05)
-ax_c.set_ylim(0.0, 1.05)
-ax_c.set_aspect('equal', adjustable='box')
-
-# =============================================================================
-# PANEL D (Bottom Right): Bar Plot (Sorted by Robinson)
-# =============================================================================
-ax_d = axes_rob[1, 1]
-
-top_n = 80
-# Sort by Robinson score for ranking
-top_rob = plot_data.nlargest(top_n, 'Robinson_Risk_Score').sort_values('Robinson_Risk_Score', ascending=True)
-
-y = np.arange(len(top_rob))
-height = 0.35
-
-# Plot bars
-# Normalize both scores to max=1 for fair comparison
-ax_d.barh(y - height/2, top_rob['RiskScore_Normalized'] / top_rob['RiskScore_Normalized'].max(), height,
-         label='Relative Risk (Normalized)', color='#ff7f0e', alpha=0.8)
-ax_d.barh(y + height/2, top_rob['Robinson_Risk_Score'] / top_rob['Robinson_Risk_Score'].max(), height,
-         label='Robinson Risk (Normalized)', color='#1f77b4', alpha=0.8)
-
-ax_d.set_yticks(y)
-ax_d.set_yticklabels(top_rob['DISTRICT'], fontsize=8)
-ax_d.set_xlabel('Risk Score', fontsize=14, fontweight='bold')
-ax_d.set_title('D)', fontsize=14, fontweight='bold', loc='left')
-ax_d.legend(loc='lower right', fontsize=14)
-ax_d.grid(axis='x', alpha=0.3, linestyle='--')
-ax_d.set_xlim(0, 1.0)
+ranked = plot_data.sort_values('Robinson_Risk_Score', ascending=True)
+y = np.arange(len(ranked))
+height = 0.38
+# Each score divided by its own maximum so both share a 0-1 axis
+ax_c.barh(y + height/2, ranked['Robinson_Risk_Score'] / ranked['Robinson_Risk_Score'].max(), height,
+          label=LABEL_ROB, color='#1f77b4', alpha=0.8)
+ax_c.barh(y - height/2, ranked['RiskScore_Normalized'] / ranked['RiskScore_Normalized'].max(), height,
+          label=LABEL_NORM, color='#ff7f0e', alpha=0.8)
+ax_c.set_yticks(y)
+ax_c.set_yticklabels(ranked['DISTRICT'].str.title(), fontsize=9)
+ax_c.set_ylim(-0.7, len(ranked) - 0.3)
+ax_c.set_xlabel('Risk score (divided by maximum)', fontsize=14, fontweight='bold')
+ax_c.set_title('C', fontsize=16, fontweight='bold', loc='left')
+ax_c.legend(loc='lower right', fontsize=12)
+ax_c.grid(axis='x', alpha=0.3, linestyle='--')
+ax_c.set_xlim(0, 1.0)
 
 # =============================================================================
 # SAVE FIGURE
 # =============================================================================
-plt.tight_layout()
-
-output_file_png = os.path.join(output_dir, 'FigS5_robinson_comparison.png')
-
-plt.savefig(output_file_png, dpi=300, bbox_inches='tight')
-plt.savefig(os.path.join(output_dir, 'FigS5_robinson_comparison.pdf'), bbox_inches='tight')
-plt.savefig(os.path.join(output_dir, 'FigS5_robinson_comparison.eps'), bbox_inches='tight', format='eps')
-
-print(f"\nSaved ranked bar plot comparison:")
-print(f"  PNG: {output_file_png}")
-print(f"  PDF: {os.path.join(output_dir, 'FigS5_robinson_comparison.pdf')}")
-print(f"  EPS: {os.path.join(output_dir, 'FigS5_robinson_comparison.eps')}")
-
+output_file_png = os.path.join(output_dir, 'Fig9_robinson_comparison.png')
+fig_rob.savefig(output_file_png, dpi=300, bbox_inches='tight')
+fig_rob.savefig(os.path.join(output_dir, 'Fig9_robinson_comparison.pdf'), bbox_inches='tight')
+print(f"Figure 9 saved to: {output_file_png}")
 plt.show()
