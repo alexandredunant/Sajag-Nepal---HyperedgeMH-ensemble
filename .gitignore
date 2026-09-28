@@ -65,3 +65,7 @@ FIGURES/formats/
 
 # Local figure backups (too large for Overleaf sync)
 Archive/Fig1_backup_*/
+
+# Output of consolidated_figures_revised.py (large EPS/PDF; regenerate locally)
+FIGURES/revised/
+__pycache__/
