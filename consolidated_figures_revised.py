@@ -423,7 +423,7 @@ else:
 highlighted_districts = {
     'Sindhupalchok', 'Baglung', 'Rolpa', 'Bajura', 'Bajhang',
     'Dolpa', 'Darchula', 'Humla', 'Manang', 'Chitawan', 'Dang',
-    'Morang', 'Mustang',
+    'Morang', 'Mustang', 'Rasuwa', 'Kathmandu', 'Gulmi',
 }
 
 # Add ALL district labels (not just major ones). Labels sit above faults (zorder 4);
