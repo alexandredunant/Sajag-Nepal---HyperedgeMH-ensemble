@@ -83,7 +83,7 @@ cascading multi-hazards \sep multi-hazard modelling \sep earthquake scenarios \s
 % -------------------- MAIN TEXT --------------------
 
 \section{Introduction}
-Earthquakes have killed more than two million people since 1900 \citep{England2011,Daniell2017} and remain one of the deadliest global hazards. Humanitarian contingency planning for future earthquakes -- which comprises both preparation for earthquake response as well as pre-emptive efforts to reduce the impacts from a future earthquake \citep{IASC2007,IFRC2012} -- is most likely to be effective if it is based on the best available scientific information on the associated risks \citep{Alexander2007}. This information should ideally include estimates of the scale of impacts in a future earthquake as well as the locations where those impacts are most likely to occur \citep{IASC2007}.
+Earthquakes have killed more than two million people since 1900 \citep{England2011,Daniell2017} and remain one of the deadliest global hazards. Humanitarian contingency planning for future earthquakes, which comprises both preparation for earthquake response as well as pre-emptive efforts to reduce the impacts from a future earthquake \citep{IASC2007,IFRC2012}, is most likely to be effective if it is based on the best available scientific information on the associated risks \citep{Alexander2007}. This information should ideally include estimates of the scale of impacts in a future earthquake as well as the locations where those impacts are most likely to occur \citep{IASC2007}.
 
 In contingency planning, the emphasis is typically placed exclusively on either worst-case or `maximum credible events' \citep[e.g.,][]{klugel_seismic_2008}. It can be useful, however, to distinguish between a range of possible or plausible impacts, especially when planning involves the allocation of often scarce resources. Existing approaches to seismic risk analysis typically fall into one of two categories \citep{Robinson2018, mcguire_deterministic_2001}. Deterministic approaches use scenarios that define the effects of one or a small number of possible future earthquakes \citep{Davies2015}, often chosen as the maximum credible event or the worst-case event that could be expected on a particular fault. In contrast, probabilistic approaches rely on estimates of the likelihood of exceeding a given value of ground motion from all possible seismic sources over a specified period of time, with the corresponding impacts from that level of shaking representing the total cumulative losses over the time period.
 
@@ -115,7 +115,7 @@ Robinson et al. \citep{Robinson2018} assembled an ensemble of 30 large ($M_w > 7
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\linewidth]{./FIGURES/Fig1_study_area_map.png}
-    \caption{Map of districts and major fault systems in Nepal. Fault traces are sourced from the Department of Mines and Geology, Government of Nepal.}
+    \caption{Map of districts and major fault systems in Nepal. Fault traces are sourced from the Department of Mines and Geology, Government of Nepal. Some districts have been highlighted to ease the spacial association with statements of the Results and Discussion sections}
     \label{fig:study}
 \end{figure}
 
@@ -134,7 +134,7 @@ Whether or not a landslide is triggered in the slope unit is determined by drawi
 
 Robinson et al. \citep{Robinson2018} focused on scenario earthquake impacts in terms of fatalities, using statistical relationships between building damage states, building occupation rates, and fatality rates. Because occupation rates vary over time (e.g., between day and night), they also considered three possible occurrence times for each of the 30 scenario earthquakes. Here, we focus instead on earthquake impacts on (static) buildings and roads, both through shaking and earthquake-triggered landsliding, and so we limit our analysis to the 30 earthquakes without considering occurrence time. Extending our multi-hazard results to estimate fatalities would require well-established empirical functions to relate landslide occurrence to fatality rates for both people in buildings and those using the road network \citep{VanWykDeVries2024}. These do not yet exist, although there is some recent research toward that goal \citep{Pollock2020,Luo2023,Hu2024}. Our choice to focus on the impacts to infrastructure is justified also by the common need in humanitarian contingency planning to focus on the numbers of affected households who will potentially require assistance \citep{IASC2007}. The detailed relationship between the locations of infrastructure, which are typically known, and the locations of people in the landscape over time, which are typically not known, remains an outstanding gap, and we return to this point in the discussion.
 
-While the hypergraph model generates an impact likelihood for each building and each $100\,\text{m}$ road segment in our infrastructure database, it is important to remember that this is only valid in a probabilistic sense and does not represent a statement that `building X will be damaged in earthquake N'. Dunant et al. \cite{Dunant2025} showed that the performance of the hypergraph model in the 2015 Gorkha earthquake, in terms of its ability to reproduce observed patterns of damage, improved as the model results were aggregated over larger and larger administrative areas. They identified the district level ($n = 77$ in Nepal) as providing the optimum trade-off between model performance and granularity of results. Despite not featuring in Nepal's federal structure after the adoption of the new constitution in 2015, district governments remain important for disaster management \citep{Bhandari2020}. Accordingly, we primarily aggregate our results at district level in the sections below. We do this by calculating the expected number of (1) buildings damaged by earthquake shaking, (2) buildings damaged by landsliding, and (3) road segments damaged by landsliding, taking each as the sum of the per-building (or per road segment) likelihood values in that district. For example, if a district contains 10 buildings and the mean per-building likelihood of damage by shaking is $0.5$, then on average we would expect 5 buildings to be completely damaged in that earthquake. Because the expected value of a sum is the sum of the individual expected values, these district totals do not require damage to be independent between buildings or between road segments. Spatial correlation (e.g., through co-location on a large landslide mass) would, however, widen the distribution of outcomes around these expected values.
+While the hypergraph model generates an impact likelihood for each building and each $100\,\text{m}$ road segment in our infrastructure database, it is important to remember that this is only valid in a probabilistic sense and does not represent a statement that `building X will be damaged in earthquake N'. \cite{Dunant2025} showed that the performance of the hypergraph model in the 2015 Gorkha earthquake, in terms of its ability to reproduce observed patterns of damage, improved as the model results were aggregated over larger and larger administrative areas. They identified the district level ($n = 77$ in Nepal) as providing the optimum trade-off between model performance and granularity of results. Despite not featuring in Nepal's federal structure after the adoption of the new constitution in 2015, district governments remain important for disaster management \citep{Bhandari2020}. Accordingly, we primarily aggregate our results at district level in the sections below. We do this by calculating the expected number of (1) buildings damaged by earthquake shaking, (2) buildings damaged by landsliding, and (3) road segments damaged by landsliding, taking each as the sum of the per-building (or per road segment) likelihood values in that district. For example, if a district contains 10 buildings and the mean per-building likelihood of damage by shaking is $0.5$, then on average we would expect 5 buildings to be completely damaged in that earthquake. Because the expected value of a sum is the sum of the individual expected values, these district totals do not require damage to be independent between buildings or between road segments. Spatial correlation (e.g., through co-location on a large landslide mass) would, however, widen the distribution of outcomes around these expected values.
 
 We use the expected numbers of buildings damaged by shaking, buildings damaged by landsliding, and road segments damaged by landsliding to estimate the exceedance probability of impacts across the 30 scenario earthquakes. Because the scenarios are equally weighted and have no associated recurrence rates, exceedance probability here refers to the fraction of the 30 equally weighted scenarios in which a given impact is equalled or exceeded, not to a probability of occurrence over time. This allows us to determine both the median and worst-case for each type of impact and within each of Nepal's 77 districts.
 
@@ -361,20 +361,26 @@ ALD, TRR, NJR, and others secured the funding for the research reported here. Th
     \centering
     \caption{Sensitivity of the district rankings to the weights in the risk scores. Each alternative is compared with the score used in the main text (Equations~\ref{eq:absolute-risk-score} and \ref{eq:normalized-risk-score}): Spearman rank correlation across the 77 districts, largest change in the rank of any district, and number of districts shared by the two lists of the ten highest-ranked districts. For the absolute score, the road-segment weight sets how many buildings one damaged $100\,\text{m}$ road segment counts as (1 in the main text); R/S/L are the weights of remoteness, shaking and landslides in the normalised score (0.50/0.25/0.25 in the main text).}
     \label{tab:S1}
-    \begin{tabular}{llccc}
+    \small
+    \setlength{\tabcolsep}{5pt}
+    \begin{tabular}{lccc}
         \toprule
-        Score & Alternative & Spearman $\rho$ & Max.\ rank shift & Top-10 overlap \\
+                    & Spearman & Max.\ rank & Top-10  \\
+        Alternative & $\rho$   & shift      & overlap \\
         \midrule
-        Absolute & Roads excluded (buildings only) & 0.998 & 5 & 9 \\
-        Absolute & Road segment = 0.5 building & 0.999 & 3 & 9 \\
-        Absolute & Road segment = 2 buildings & 0.997 & 5 & 10 \\
-        Absolute & Remoteness weight 0.4 & 0.969 & 15 & 8 \\
-        Absolute & Remoteness weight 0.6 & 0.966 & 16 & 6 \\
-        Normalised & R/S/L = 0.33/0.33/0.33 & 0.993 & 9 & 8 \\
-        Normalised & R/S/L = 0.40/0.30/0.30 & 0.997 & 6 & 9 \\
-        Normalised & R/S/L = 0.60/0.20/0.20 & 0.998 & 5 & 9 \\
-        Normalised & R/S/L = 0.50/0.35/0.15 & 0.997 & 6 & 10 \\
-        Normalised & R/S/L = 0.50/0.15/0.35 & 0.998 & 4 & 10 \\
+        \multicolumn{4}{l}{\textit{Absolute score}} \\
+        \quad Buildings only (no roads) & 0.998 & 5  & 9  \\
+        \quad Road segment = 0.5 bldg.  & 0.999 & 3  & 9  \\
+        \quad Road segment = 2 bldgs.   & 0.997 & 5  & 10 \\
+        \quad Remoteness weight 0.4     & 0.969 & 15 & 8  \\
+        \quad Remoteness weight 0.6     & 0.966 & 16 & 6  \\
+        \addlinespace
+        \multicolumn{4}{l}{\textit{Normalised score (R/S/L)}} \\
+        \quad 0.33/0.33/0.33 & 0.993 & 9 & 8  \\
+        \quad 0.40/0.30/0.30 & 0.997 & 6 & 9  \\
+        \quad 0.60/0.20/0.20 & 0.998 & 5 & 9  \\
+        \quad 0.50/0.35/0.15 & 0.997 & 6 & 10 \\
+        \quad 0.50/0.15/0.35 & 0.998 & 4 & 10 \\
         \bottomrule
     \end{tabular}
 \end{table}
