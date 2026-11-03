@@ -1,0 +1,11 @@
+Score,Alternative,Spearman rho,Max rank shift,Top-10 overlap
+Absolute,Roads excluded (buildings only),0.998,5,9
+Absolute,Road segment = 0.5 building,0.999,3,9
+Absolute,Road segment = 2 buildings,0.997,5,10
+Absolute,Remoteness weight 0.4,0.969,15,8
+Absolute,Remoteness weight 0.6,0.966,16,6
+Normalised,R/S/L = 0.33/0.33/0.33,0.993,9,8
+Normalised,R/S/L = 0.40/0.30/0.30,0.997,6,9
+Normalised,R/S/L = 0.60/0.20/0.20,0.998,5,9
+Normalised,R/S/L = 0.50/0.35/0.15,0.997,6,10
+Normalised,R/S/L = 0.50/0.15/0.35,0.998,4,10

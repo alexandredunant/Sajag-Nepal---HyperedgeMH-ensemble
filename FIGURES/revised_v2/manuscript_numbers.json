@@ -1,0 +1,292 @@
+{
+  "worst_total_excess_pct_max": 0.57,
+  "worst_total_excess_pct_district": "Solukhumbu",
+  "national_Earthquake": {
+    "min": 8562,
+    "min_event": "KKM_7pt8_Chn",
+    "max": 3402789,
+    "max_event": "MHT_8pt6_MWC",
+    "median": 640461
+  },
+  "national_BuildingLandslide": {
+    "min": 84,
+    "min_event": "KKM_7pt8_Chn",
+    "max": 177809,
+    "max_event": "MHT_8pt6_MWC",
+    "median": 32295
+  },
+  "national_RoadLandslide": {
+    "min": 116,
+    "min_event": "KKM_7pt8_Chn",
+    "max": 150826,
+    "max_event": "MHT_8pt6_MWC",
+    "median": 29324
+  },
+  "shaking_over_landslide_factor": {
+    "combined": [
+      6.5,
+      42.9
+    ],
+    "buildings": [
+      13.7,
+      102.5
+    ],
+    "roads": [
+      12.2,
+      73.9
+    ]
+  },
+  "landslide_ratio_pct": {
+    "min": 0.6,
+    "max": 83.9,
+    "n_districts_above_50": 5,
+    "buildings_only_max": 26.8
+  },
+  "district_minimum_max": {
+    "Earthquake": 0.0,
+    "BuildingLandslide": 0.51,
+    "RoadLandslide": 0.4
+  },
+  "share_scenarios_expected_ge1_pct": {
+    "Earthquake": [
+      33,
+      63
+    ],
+    "BuildingLandslide": [
+      30,
+      87
+    ],
+    "RoadLandslide": [
+      27,
+      77
+    ]
+  },
+  "fig4_regional_median_at_50pct": {
+    "Earthquake": {
+      "High Mountain": 0.0,
+      "Hill": 0.0,
+      "Middle Mountain": 79.5,
+      "Siwalik": 813.4,
+      "Terai": 199.9
+    },
+    "BuildingLandslide": {
+      "High Mountain": 1.0,
+      "Hill": 2.0,
+      "Middle Mountain": 3.4,
+      "Siwalik": 1.8,
+      "Terai": 0.4
+    },
+    "RoadLandslide": {
+      "High Mountain": 1.5,
+      "Hill": 1.9,
+      "Middle Mountain": 2.8,
+      "Siwalik": 1.5,
+      "Terai": 0.2
+    }
+  },
+  "cv_range": {
+    "Earthquake": [
+      1.29,
+      2.01
+    ],
+    "BuildingLandslide": [
+      1.78,
+      2.82
+    ],
+    "RoadLandslide": [
+      1.77,
+      2.85
+    ]
+  },
+  "top5_cv": {
+    "Earthquake": {
+      "Rasuwa": 2.01,
+      "Udayapur": 2.0,
+      "Ilam": 1.95,
+      "Sunsari": 1.94,
+      "Jhapa": 1.94
+    },
+    "BuildingLandslide": {
+      "Banke": 2.82,
+      "Bardiya": 2.81,
+      "Siraha": 2.78,
+      "Saptari": 2.77,
+      "Kanchanpur": 2.75
+    },
+    "RoadLandslide": {
+      "Banke": 2.85,
+      "Saptari": 2.79,
+      "Siraha": 2.77,
+      "Bajura": 2.74,
+      "Sarlahi": 2.72
+    }
+  },
+  "top5_std": {
+    "Earthquake": {
+      "Kathmandu": 60831.0,
+      "Chitawan": 59307.0,
+      "Dang": 48885.0,
+      "Morang": 48775.0,
+      "Kabhrepalanchok": 45701.0
+    },
+    "BuildingLandslide": {
+      "Sindhupalchok": 4505.0,
+      "Baglung": 4502.0,
+      "Nuwakot": 3582.0,
+      "Ilam": 3122.0,
+      "Bajhang": 3099.0
+    },
+    "RoadLandslide": {
+      "Sindhupalchok": 3484.0,
+      "Baglung": 3216.0,
+      "Bajhang": 2880.0,
+      "Rolpa": 2866.0,
+      "Makawanpur": 2808.0
+    }
+  },
+  "spearman_shaking_with_building_count": {
+    "std": 0.87,
+    "cv": 0.29
+  },
+  "silhouette_by_k": {
+    "2": 0.762,
+    "3": 0.626,
+    "4": 0.568,
+    "5": 0.588,
+    "6": 0.578,
+    "7": 0.57,
+    "8": 0.583,
+    "9": 0.582
+  },
+  "remoteness_category_sizes": {
+    "Low": 55,
+    "Medium": 14,
+    "High": 8
+  },
+  "high_remoteness_districts": [
+    "BAJHANG",
+    "DARCHULA",
+    "DOLPA",
+    "HUMLA",
+    "JAJARKOT",
+    "MANANG",
+    "MUGU",
+    "MUSTANG"
+  ],
+  "top5_health_remoteness": {
+    "MANANG": 1.0,
+    "DOLPA": 0.65,
+    "HUMLA": 0.38,
+    "DARCHULA": 0.32,
+    "KALIKOT": 0.31
+  },
+  "top5_dhq_remoteness": {
+    "DOLPA": 1.0,
+    "MANANG": 0.84,
+    "DARCHULA": 0.74,
+    "HUMLA": 0.68,
+    "BAJHANG": 0.63
+  },
+  "share_districts_dhq_above_health_pct": 91,
+  "health_above_dhq_by_more_than_0.02": {
+    "MANANG": 0.16
+  },
+  "dhq_above_health_by_more_than_0.2": {
+    "DARCHULA": 0.42,
+    "BAJHANG": 0.38,
+    "DOLPA": 0.35,
+    "JAJARKOT": 0.32,
+    "HUMLA": 0.31,
+    "MUGU": 0.28,
+    "MUSTANG": 0.26
+  },
+  "remoteness_vs_road_damage": {
+    "spearman_rho": 0.81,
+    "spearman_p": 2.13e-19,
+    "n": 77,
+    "kruskal_wallis_p": 7.36e-06
+  },
+  "median_pct_roads_damaged_by_category": {
+    "High": 19.8,
+    "Low": 9.2,
+    "Medium": 14.4
+  },
+  "top8_absolute_score": {
+    "DOLPA": 0.55,
+    "KATHMANDU": 0.51,
+    "BAJHANG": 0.5,
+    "CHITAWAN": 0.47,
+    "DANG": 0.46,
+    "MORANG": 0.46,
+    "ILAM": 0.46,
+    "KABHREPALANCHOK": 0.45
+  },
+  "top8_normalised_score": {
+    "DOLPA": 0.9,
+    "MANANG": 0.85,
+    "DARCHULA": 0.85,
+    "BAJHANG": 0.76,
+    "JAJARKOT": 0.72,
+    "KALIKOT": 0.71,
+    "BAJURA": 0.7,
+    "HUMLA": 0.64
+  },
+  "sensitivity_min_spearman": {
+    "Absolute": 0.966,
+    "Normalised": 0.993
+  },
+  "sensitivity_min_top10_overlap": {
+    "Absolute": 6,
+    "Normalised": 8
+  },
+  "robinson_spearman": {
+    "shaking_only": 0.8,
+    "shaking_landslide": 0.8,
+    "n": 77
+  },
+  "spearman_shakingonly_vs_full": 0.974,
+  "largest_rank_gains_from_landslides": {
+    "RASUWA": 22,
+    "BAGLUNG": 12,
+    "MYAGDI": 12,
+    "GULMI": 8,
+    "TAPLEJUNG": 6,
+    "PARBAT": 6,
+    "RUKUM EAST": 6,
+    "OKHALDHUNGA": 5
+  },
+  "largest_rank_losses_from_landslides": {
+    "DADELDHURA": -13,
+    "BHOJPUR": -10,
+    "DHADING": -10,
+    "SALYAN": -9,
+    "JUMLA": -8
+  },
+  "ranked_higher_than_robinson": {
+    "MANANG": 59,
+    "RASUWA": 42,
+    "MUSTANG": 39,
+    "TAPLEJUNG": 22,
+    "SOLUKHUMBU": 19,
+    "KATHMANDU": 17,
+    "DARCHULA": 17,
+    "BAITADI": 13
+  },
+  "ranked_lower_than_robinson": {
+    "ARGHAKHANCHI": -36,
+    "GULMI": -22,
+    "ROLPA": -19,
+    "BANKE": -18,
+    "PALPA": -18
+  },
+  "robinson_scores_shared_by_split_districts": [
+    "NAWALPUR",
+    "PARASI",
+    "RUKUM EAST",
+    "RUKUM WEST"
+  ],
+  "fig9_rank_difference_range": [
+    -36,
+    59
+  ]
+}
