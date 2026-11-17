@@ -1,7 +1,9 @@
 # ---------------------------------------------------------------------------
 # Data (too large for git; see README.md for the expected layout and sources)
 # ---------------------------------------------------------------------------
-data/
+data/*
+# ...except the district-level model outputs (~1 MB) cited in the data availability statement
+!data/aggregated_stats/
 
 # Local archive of superseded drafts, scripts, figures and Overleaf comment exports
 # (kept on disk only; earlier versions are also in the git history)

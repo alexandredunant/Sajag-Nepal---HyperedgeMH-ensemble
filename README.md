@@ -25,7 +25,7 @@ scripts/
   figure_S3_median_collapse.py
   utils.py
 model/                      hypergraph multi-hazard impact model (ensemble simulation code)
-data/                       input data (not tracked; see below)
+data/                       input data (only aggregated_stats/ is tracked; see below)
 requirements.txt
 ```
 
@@ -73,7 +73,9 @@ cp $V/FigS5_district_names.png $N/figS5.png
 
 ## Data
 
-`data/` is not tracked (git-ignored). The figure scripts expect:
+`data/` is git-ignored except `data/aggregated_stats/`, the district-level model outputs (~1 MB) that
+all figures and numbers are computed from. The other files are third-party inputs (see the data availability
+statement in the paper). The figure scripts expect:
 
 ```
 data/
