@@ -1,7 +1,7 @@
-# Multi-hazard scenario ensembles for estimating earthquake risk
+# Multi-hazard scenario ensembles for estimating earthquake risk in Nepal
 
 Code, figures and manuscript for Dunant et al., *Multi-hazard scenario ensembles for estimating
-earthquake risk* (submitted to *Natural Hazards and Earth System Sciences*). The study applies the
+earthquake risk in Nepal* (submitted to *Natural Hazards and Earth System Sciences*). The study applies the
 hypergraph multi-hazard impact model of Dunant et al. (2025) to the 30-earthquake scenario ensemble of
 Robinson et al. (2018) to estimate shaking and coseismic-landslide impacts on buildings and roads in Nepal.
 
