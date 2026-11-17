@@ -9,11 +9,11 @@ Robinson et al. (2018) to estimate shaking and coseismic-landslide impacts on bu
 
 ```
 manuscript.tex              working manuscript (elsarticle; formerly main_updt.tex)
-references.bib              bibliography (canonical copy)
+latexmkrc                   lets Overleaf/latexmk find files in nhess/ when building from the root
 nhess/                      NHESS submission (Copernicus LaTeX package 7.16)
   nhess_manuscript.tex        main paper, document class [nhess, manuscript]{copernicus}
   nhess_supplement.tex        supplement (Figs. S1-S5, Tables S1-S2)
-  build.sh                    syncs figures and references.bib, then compiles both
+  references.bib              bibliography (the only copy; also used by manuscript.tex)
   figures/                    figures renamed fig01.png ... fig09.png, figS1.png ... figS5.png
   copernicus.cls/.cfg/.bst, pdfscreen*.sty
 FIGURES/
@@ -44,19 +44,32 @@ Fig. S1 (fragility functions) was produced separately and has no script in this 
 
 ## Building the NHESS submission
 
-```bash
-bash nhess/build.sh
-```
-
-This copies `references.bib` and the figures from `FIGURES/` into `nhess/` (under the file names
-Copernicus expects), then runs `latexmk` on the manuscript and the supplement. `copernicus.cls` needs the
-`fontawesome5`, `fontawesome` and `vntex` TeX packages (included in full TeX Live and on Overleaf).
-`nhess_manuscript.tex` is derived from `manuscript.tex`; text changes made in one must be copied to the other.
-
 On Overleaf (GitHub sync), select `nhess/nhess_manuscript.tex` or `nhess/nhess_supplement.tex` as the main
 document. The root `latexmkrc` adds `nhess/` to the TeX, BibTeX and graphics search paths, so the documents
-compile whether the build runs from the project root or from `nhess/`. `build.sh` is not run on Overleaf: after
-regenerating figures, run it locally (or copy the figures into `nhess/figures/`) before pushing.
+compile whether the build runs from the project root or from `nhess/`. Locally:
+
+```bash
+cd nhess && latexmk -pdf nhess_manuscript.tex && latexmk -pdf nhess_supplement.tex
+```
+
+`copernicus.cls` needs the `fontawesome5`, `fontawesome` and `vntex` TeX packages (included in full TeX Live
+and on Overleaf). `nhess_manuscript.tex` is derived from `manuscript.tex`; text changes made in one must be
+copied to the other.
+
+The figures in `nhess/figures/` are copies, under the names Copernicus expects, of the script outputs in
+`FIGURES/`. After regenerating figures, refresh the copies from the repository root:
+
+```bash
+F=FIGURES; V=FIGURES/revised_v2; N=nhess/figures
+cp $V/Fig1_study_area_map.png $N/fig01.png;              cp $V/Fig2_exceedance_probability.png $N/fig02.png
+cp $V/Fig3_district_impacts_ratio.png $N/fig03.png;      cp $V/Fig4_district_exceedance_curves.png $N/fig04.png
+cp $V/Fig5_worst_case_absolute_proportional.png $N/fig05.png; cp $V/Fig6_standard_deviation.png $N/fig06.png
+cp $V/Fig7_remoteness_analysis.png $N/fig07.png;         cp $V/Fig8_risk_scores.png $N/fig08.png
+cp $V/Fig9_robinson_comparison.png $N/fig09.png
+cp $F/FigS1_fragility_functions.png $N/figS1.png;        cp $F/FigS2_pga_ensemble_maps.png $N/figS2.png
+cp $F/FigS3_median_collapse_probability.png $N/figS3.png; cp $V/FigS4_remoteness_clusters.png $N/figS4.png
+cp $V/FigS5_district_names.png $N/figS5.png
+```
 
 ## Data
 
