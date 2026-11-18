@@ -24,7 +24,7 @@ Anticipating the likely impacts of a future large earthquake is essential for ef
 
 ### Short summary (494/500 characters including spaces)
 
-Earthquake plans in Nepal usually count only buildings damaged by shaking. We simulated 30 large earthquakes and the landslides each would trigger. Shaking causes most of the damage, especially in cities and lowlands. In steep mountain districts, however, landslides impact many buildings and damage a larger share of roads the more remote a district is, compounding isolation where aid is already hardest to deliver. Considering both hazards gives planners a fuller picture of earthquake risk.
+Earthquake plans in Nepal usually count only buildings damaged by shaking. We simulated 30 large earthquakes and the landslides each would trigger. Shaking causes most of the damage, especially in cities and lowlands. In steep mountain districts, however, landslides impact many buildings and damage a larger share of roads the more remote a district is, compounding isolation where aid is already hardest to deliver. Considering a multi-hazard approach gives planners a fuller picture of earthquake risk.
 
 ## Before submitting
 
